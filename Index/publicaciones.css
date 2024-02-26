@@ -1,0 +1,112 @@
+/* COLORS */
+/* MIXINS RESPONSIVE */
+/* GENERAL STYLES */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+}
+body {
+    font-size: 1.5rem;
+    font-family: 'Alata', sans-serif;
+    background-color: #fff;
+    color: #000;
+    font-weight: 400;
+}
+/* TEXT */
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1, h2, h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+p {
+    font-weight: 500;
+}
+
+/* ARTICLES*/
+.article-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.article-container h3 {
+    font-size: 40px;
+    border-bottom: 1px solid #b1b1b1;
+}
+
+.article-container .article {
+    box-shadow: 0 4px 16px -8px rgba(0 , 0 , 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+}
+
+.article .article-left {
+    background: #222;
+    min-width: 82px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+}
+
+.article .article-left .fa-solid {
+    font-size: 30px;
+}
+.article-right {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+.article-right ol{
+    margin: 10px;
+}
+
+.article-right .article-description, .article-right a, .article-right .article-description .description-title{
+    margin: 0px 0px 10px 0px;
+}
+
+.article .article-right h3.article-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 550px) {
+    .article {
+        flex-direction: column;
+    }
+    .article .article-left {
+        padding: 0;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .article .article-left .article-date .day, .article .article-left .article-date .month {
+        display: inline-block;
+        font-size: 24px;
+    }
+
+    .article .article-left .article-date {
+        padding: 10px;
+    }
+}

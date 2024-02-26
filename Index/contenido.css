@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto{
+    max-width: 600px;
+    margin-right: 50px;
+    line-height: 1.5;
+}
+
+.carrusel img{
+    width: 500px;
+    height: 400px;
+}
+.carrusel {
+    float: left;
+    vertical-align:top;
+    margin-left: 50px;
+}
+
+
+

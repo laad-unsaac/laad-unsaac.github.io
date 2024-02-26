@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ 
+    font-size: 2.5em;
+    line-height: 4;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:blueviolet; }
+
+header{
+    background-color: #233471;
+    
+}
+
+header .logo img{
+    height: 50px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#inicio .container{
+    padding: 100px 12px;
+}
+
+#publicaciones .container{
+    padding: 100px 12px;
+}
+
+
+@media (min-width: 850px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #pulicaciones .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #publicaciones .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #publicaciones h2{
+        margin-top: 0px;
+    }
+
+    #publicaciones .img-container{
+        background-image: url("media/somos-proya.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
