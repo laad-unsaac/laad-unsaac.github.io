@@ -75,8 +75,17 @@ p {
     flex-direction: column;
     padding: 0 24px;
 }
-.article-right ol{
-    margin: 10px;
+
+.article-right .article-autors{
+    margin: 10px 0px 10px 0px;
+}
+
+.article-right a{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 105px;
+    border-radius: 10px;
 }
 
 .article-right .article-description, .article-right a, .article-right .article-description .description-title{
