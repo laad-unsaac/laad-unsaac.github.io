@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@400, 7008display=swap');
-*{
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@400,700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
- /*--- Pie de Pagina ---*/
-footer {   
+/*--- Pie de Pagina ---*/
+footer {
     left: 0;
     bottom: 0;
     width: 100%;
@@ -14,17 +15,17 @@ footer {
     background-color: #233471;
 }
 
-footer .grupo-1{
-   width: 100%;
-   max-width: 1200px;
+footer .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
-    display:grid;
+    display: grid;
     grid-template-columns: 25% 15% 31% 15%;
-    grid-gap:50px;
+    grid-gap: 50px;
     padding: 45px 0px;
 }
 
-footer .grupo-1 .box figure{
+footer .grupo-1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
@@ -32,20 +33,19 @@ footer .grupo-1 .box figure{
     align-items: center;
 }
 
-footer .grupo-1 .box figure img{
+footer .grupo-1 .box figure img {
     width: 250px;
 }
 
-footer .grupo-1 .box h2{
-    width: 10%;
+footer .grupo-1 .box h2 {
+    width: 100%;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
     font-size: 20px;
-    border-bottom: 2PX solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
-
-footer.grupo-1 .footer-links {
+footer .grupo-1 .footer-links {
     font-size: 14px;
     color: rgb(255, 255, 255);
 }
@@ -55,16 +55,16 @@ footer .grupo-1 .footer-links li {
 }
 
 footer .grupo-1 .footer-links li a {
-    text-decoration: none; 
+    text-decoration: none;
     color: rgba(252, 252, 252, 0.932);
     font-size: 14px;
 }
 
 footer .grupo-1 .footer-links li a:hover {
-    color: gray; 
+    color: gray;
 }
 
-footer .grupo-1 .box p{
+footer .grupo-1 .box p {
     color: #ffffff;
     text-align: left;
     margin-bottom: 15px;
@@ -79,7 +79,7 @@ footer .grupo-1 p span {
 footer .map,
 footer .email {
     display: flex;
-    align-items: unsafe; /* Alinea verticalmente los iconos y el texto */
+    align-items: center; /* Alinea verticalmente los iconos y el texto */
 }
 
 footer .map i,
@@ -95,15 +95,17 @@ footer .map i {
 footer .email i {
     color: rgb(255, 255, 255); /* Color del icono de correo */
 }
+
 footer .email p a {
     color: rgb(255, 255, 255); /* Cambia el color del texto del correo electrónico a negro */
 }
+
 footer .email p a:hover {
     color: gray; /* Cambia el color del texto del correo electrónico a negro */
 }
 
 footer .grupo-1 .box h3 {
-    width: 10%;
+    width: 100%;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
     font-size: 20px;
@@ -111,7 +113,7 @@ footer .grupo-1 .box h3 {
     white-space: nowrap;
 }
 
-footer .grupo-1 .red-social a{
+footer .grupo-1 .red-social a {
     display: inline-block;
     text-decoration: none;
     width: 25px;
@@ -123,22 +125,22 @@ footer .grupo-1 .red-social a{
     transition: all 300ms ease;
 }
 
-footer .grupo-1 .red-social a:hover{
+footer .grupo-1 .red-social a:hover {
     color: rgb(0, 0, 0);
 }
 
-footer .grupo-2{
+footer .grupo-2 {
     background-color: #2a3d80;
     padding: 15px 10px;
     text-align: center;
     color: #747474;
 }
 
-@media (max-width:800px) {
-    footer .grupo-1{
+@media (max-width: 800px) {
+    footer .grupo-1 {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
+        grid-gap: 30px;
         padding: 35px 0px;
     }
 }
