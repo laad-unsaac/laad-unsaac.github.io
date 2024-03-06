@@ -11,17 +11,11 @@ body{
     margin: 0;
 }
 
-h1{ 
-    font-size: 2.5em;
-    line-height: 4;
-}
 
 .container{
     max-width: 1400px;
     margin: auto;
 }
-
-.color-acento{ color:blueviolet; }
 
 header{
     background-color: #233471;
@@ -29,8 +23,9 @@ header{
 }
 
 header .logo img{
-    height: 70px;
+    height: 60px;
     margin-left: 50px;
+    margin-top: 5px;
 }
 
 header .container{
@@ -54,7 +49,7 @@ header a{
 }
 
 header a:hover{
-    color: blueviolet;
+    color: gray;
 }
 
 #inicio .container{
@@ -66,7 +61,7 @@ header a:hover{
 }
 
 
-@media (min-width: 850px){
+@media (min-width: 850px){    
 
     header{
         position: fixed;
@@ -104,7 +99,6 @@ header a:hover{
     }
 
     #publicaciones .img-container{
-        background-image: url("media/somos-proya.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;

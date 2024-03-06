@@ -99,8 +99,6 @@ p {
     text-transform: uppercase;
 }
 
-
-
 @media (max-width: 550px) {
     .article {
         flex-direction: column;

@@ -86,15 +86,9 @@ footer .map i,
 footer .email i {
     vertical-align: middle;
     margin-right: 5px; /* Ajuste del espacio entre el icono y el texto */
+    color: rgb(255, 255, 255);
 }
 
-footer .map i {
-    color: rgb(255, 255, 255); /* Color del icono de ubicación */
-}
-
-footer .email i {
-    color: rgb(255, 255, 255); /* Color del icono de correo */
-}
 footer .email p a {
     color: rgb(255, 255, 255); /* Cambia el color del texto del correo electrónico a negro */
 }
@@ -124,7 +118,7 @@ footer .grupo-1 .red-social a{
 }
 
 footer .grupo-1 .red-social a:hover{
-    color: rgb(0, 0, 0);
+    color: gray;
 }
 
 footer .grupo-2{
@@ -135,10 +129,18 @@ footer .grupo-2{
 }
 
 @media (max-width:800px) {
+    footer .map{
+        max-width: 370px;
+    }
     footer .grupo-1{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
-    }
+        margin-left: 50px;
+        background-size: cover;
+        background-position: center center;
+        width: 400px; 
+    }  
+    
 }
