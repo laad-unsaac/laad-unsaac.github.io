@@ -2,20 +2,6 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-}
-
-
-.container{
-    max-width: 1400px;
-    margin: auto;
-}
 
 header{
     background-color: #233471;
@@ -52,11 +38,27 @@ header a:hover{
     color: gray;
 }
 
-#inicio .container{
+#inicio {
     padding: 100px 12px;
 }
 
-#publicaciones .container{
+#eventos{
+    padding: 100px 12px;
+}
+
+#proyectos{
+    padding: 100px 12px;
+}
+
+#publicaciones {
+    padding: 100px 12px;
+}
+
+#miembros{
+    padding: 100px 12px;
+}
+
+#contacto{
     padding: 100px 12px;
 }
 
@@ -79,7 +81,7 @@ header a:hover{
         padding-right: 20px;
     }
 
-    #pulicaciones .container{
+    #pulicaciones {
         display: flex;
         justify-content: space-evenly;
     }
@@ -105,7 +107,7 @@ header a:hover{
         width: 400px; 
     }
 
-    footer .container{
+    footer {
         justify-content: flex-end;
     }
 }

@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.member-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    line-height: 3;
+}
