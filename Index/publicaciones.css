@@ -81,15 +81,22 @@ p {
 }
 
 .article-right a{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    width: 105px;
-    border-radius: 10px;
+    display: flex;
+    margin: 10px 10px 10px 0px;
+    justify-content: end;
+}
+.article-right .article-description .description-title{
+    margin: 0px 0px 10px 0px;
+}
+.read-more-text {
+    display: none;
 }
 
-.article-right .article-description, .article-right a, .article-right .article-description .description-title{
-    margin: 0px 0px 10px 0px;
+.article-description label {
+    margin: 10px 10px 10px 0px;
+}
+.read-more-text label {
+    margin: 10px 10px 10px 0px;
 }
 
 .article .article-right h3.article-title {
@@ -97,6 +104,34 @@ p {
     margin: 24px 0 10px 0;
     color: #218bbb;
     text-transform: uppercase;
+}
+#ch {
+    display: none;
+}
+
+#ch:checked ~ .read-more-text {
+    display: block;
+}
+
+#ch:checked ~ label {
+    display: none;
+}
+
+#ch:checked ~ a {
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px 10px 0px;
+}
+
+label {
+    margin-top:12px ;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 125px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
 }
 
 @media (max-width: 550px) {
