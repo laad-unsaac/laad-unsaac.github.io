@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="Index/publicaciones.css">
     <link rel="stylesheet" href="Index/mienbros.css">
     <link rel="stylesheet" href="Index/contacto.css">
-    <script src="Index/carrusel.js"></script>
+    <script src="carrusel.js" defer></script>
+    <script src="menu.js"></script>
     <link rel="stylesheet" href="Index/footer.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -290,12 +291,224 @@
             <h1>Members</h1>
             <div class="docentes">
                 <h4>Teachers</h4>
+                <div class="wrapper">
+                    <i id="leftTeachers" class="fa-solid fa-angle-left"></i>
+                    <ul class="carousel teachers-carousel">
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>Dr. Lauro Enciso Rodas</h2>
+                        <span>Algoritmos</span>
+                        <div class="red_social">
+                            <a href="https://orcid.org/0000-0001-6266-0838" class="fab fa-orcid"></a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&to=lauro.enciso@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/roma - HANS HARLEY CCACYAHUILLCA BEJAR.jpeg" alt="img" draggable="false"></div>
+                        <h2>Dr. Hans Harley Ccacyahuillca Bejar</h2>
+                        <span>Visión Computacional</span>
+                        <div class="red_social">
+                            <a href="https://orcid.org/0000-0001-5179-657X" class="fab fa-orcid"></a>
+                            <a href="https://scholar.google.com/citations?user=o4k1GCYAAAAJ&hl=es" class="fab fa-google-scholar"></a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&to=hans.ccacyahuillca@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/foto_harley - HARLEY VERA OLIVERA.jpeg" alt="img" draggable="false"></div>
+                        <h2>Mag. Harley Vera Olivera</h2>
+                        <span>Base de datos, modelo de datos</span>
+                        <div class="red_social">
+                            <a href="https://orcid.org/0000-0003-2011-8797" class="fab fa-orcid"></a>
+                            <a href="https://scholar.google.com/citations?user=Ru_DKGsAAAAJ&hl=en" class="fab fa-google-scholar"></a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&to=harley.vera@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=39576" target="_blank"><u>CTI Vitae</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>nombre </h2>
+                        <span>Especialidad</span>
+                        <div class="red_social">
+                            <a href="#" class="fab fa-orcid"></a>
+                            <a href="#" class="fab fa-google-scholar"></a>
+                            <a href="#" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>nombre </h2>
+                        <span>Especialidad</span>
+                        <div class="red_social">
+                            <a href="#" class="fab fa-orcid"></a>
+                            <a href="#" class="fab fa-google-scholar"></a>
+                            <a href="#" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>nombre </h2>
+                        <span>Especialidad</span>
+                        <div class="red_social">
+                            <a href="#" class="fab fa-orcid"></a>
+                            <a href="#" class="fab fa-google-scholar"></a>
+                            <a href="#" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                    <i id="rightTeachers" class="fa-solid fa-angle-right"></i>
             </div>
-            <div class="alumnos">
-                <h4>Students</h4>
+        </div>
+        <div class="alumnos">
+            <h4>Students</h4>
+            <div class="wrapper">
+                <i id="leftStudents" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel students-carousel">
+                    <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>nombre </h2>
+                        <span>Especialidad</span>
+                        <div class="red_social">
+                            <a href="#" class="fab fa-orcid"></a>
+                            <a href="#" class="fab fa-google-scholar"></a>
+                            <a href="#" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>nombre </h2>
+                        <span>Especialidad</span>
+                        <div class="red_social">
+                            <a href="#" class="fab fa-orcid"></a>
+                            <a href="#" class="fab fa-google-scholar"></a>
+                            <a href="#" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>nombre </h2>
+                        <span>Especialidad</span>
+                        <div class="red_social">
+                            <a href="#" class="fab fa-orcid"></a>
+                            <a href="#" class="fab fa-google-scholar"></a>
+                            <a href="#" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>nombre </h2>
+                        <span>Especialidad</span>
+                        <div class="red_social">
+                            <a href="#" class="fab fa-orcid"></a>
+                            <a href="#" class="fab fa-google-scholar"></a>
+                            <a href="#" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>nombre </h2>
+                        <span>Especialidad</span>
+                        <div class="red_social">
+                            <a href="#" class="fab fa-orcid"></a>
+                            <a href="#" class="fab fa-google-scholar"></a>
+                            <a href="#" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>nombre </h2>
+                        <span>Especialidad</span>
+                        <div class="red_social">
+                            <a href="#" class="fab fa-orcid"></a>
+                            <a href="#" class="fab fa-google-scholar"></a>
+                            <a href="#" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                    </ul>
+                    <i id="rightStudents" class="fa-solid fa-angle-right"></i>
             </div>
-            <div class="ex-estudiantes">
-                <h4>Ex student</h4>
+        </div>
+        <div class="ex-estudiantes">
+            <h4>Ex Students</h4>
+            <div class="wrapper">
+                <i id="leftExStudents" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel ex-students-carousel">
+                    <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>Mag. Edwin Alvarez Mamani</h2>
+                        <span>Estudiante</span>
+                        <div class="red_social">
+                            <a href="https://orcid.org/0000-0001-9458-9116" class="fab fa-orcid"></a>
+                            <a href="https://scholar.google.com/citations?hl=es&user=vyrFoh4AAAAJ" class="fab fa-google-scholar"></a>
+                            <a href="https://github.com/win7" class="fa fa-github"></a>
+                        </div>
+                        <a href="https://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do;jsessionid=84458394a1f72648a34ecc87b9cc?id_investigador=118713" target="_blank"><u>CTI Vitae</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/jared2019-bw - Jared León.jpg" alt="img" draggable="false"></div>
+                        <h2>Mag. Jared León Malpartida</h2>
+                        <span>Estudiante de PhD en Matemáticas</span>
+                        <div class="red_social">
+                            <a href="https://scholar.google.com/citations?user=xqs6PzIAAAAJ&hl=en" class="fab fa-google-scholar"></a>
+                            <a href="https://wozmit.github.io/" class="fa fa-globe"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>bach. Milagros Yarahuaman Rojas</h2>
+                        <span>Estudiante de Maestria</span>
+                        <div class="red_social">
+                            <a href="https://orcid.org/0000-0003-1656-1876" class="fab fa-orcid"></a>
+                            <a href="https://scholar.google.com/citations?hl=en&user=zx8xBkgAAAAJ" class="fab fa-google-scholar"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>nombre </h2>
+                        <span>Especialidad</span>
+                        <div class="red_social">
+                            <a href="#" class="fab fa-orcid"></a>
+                            <a href="#" class="fab fa-google-scholar"></a>
+                            <a href="#" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>nombre </h2>
+                        <span>Especialidad</span>
+                        <div class="red_social">
+                            <a href="#" class="fab fa-orcid"></a>
+                            <a href="#" class="fab fa-google-scholar"></a>
+                            <a href="#" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
+                        <h2>nombre </h2>
+                        <span>Especialidad</span>
+                        <div class="red_social">
+                            <a href="#" class="fab fa-orcid"></a>
+                            <a href="#" class="fab fa-google-scholar"></a>
+                            <a href="#" class="fa fa-envelope-o"></a>
+                        </div>
+                        <a href="#" target="_blank"><u>.</u></a>
+                      </li>
+                    </ul>
+                    <i id="rightExStudents" class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
         </div>
     </section>
@@ -344,8 +557,6 @@
                 <h3>FOLLOW US</h3>
                 <div class="red-social">
                     <a href="https://www.facebook.com/laad.unsaac?locale=es_LA" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
                     <a href="https://github.com/laad-unsaac" class="fa fa-github"></a>
                 </div>   
             </div>
