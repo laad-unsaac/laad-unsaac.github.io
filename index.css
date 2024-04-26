@@ -1,112 +1,147 @@
-*{
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: 'Alata', sans-serif;
+  background-color: #fff;
+  color: #000;
+  font-weight: 400;
+}
+
+/*---- CABECERA ----*/
+
+header {
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #233471;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .logo img {
+  height: 60px;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+header nav {
+  display: flex;
+  text-align: center;
+  padding-bottom: 25px;
+  position: relative; 
+  z-index: 1;
+}
+
+header label,
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+header label:hover,
+header a:hover {
+  color: rgb(108, 103, 119);
+}
+
+header nav label:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
+}
+
+/*--- GENERAL ----*/
+
+
+
+#inicio:checked ~ nav label.inicio,
+#eventos:checked ~ nav label.eventos,
+#proyectos:checked ~ nav label.proyectos,
+#miembros:checked ~ nav label.miembros,
+#contacto:checked ~ nav label.contacto,
+#about:checked ~ nav label.about {
+  color: #fff;
+}
+
+input[type="radio"] {
+  display: none;
 }
 
 
-header{
-    background-color: #233471;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    width: 100%;
+/* TEXTO */
+a, a:visited, a:hover {
+  text-decoration: none;
 }
 
-header .logo img{
-    height: 60px;
-    margin-left: 50px;
-    margin-top: 5px;
+li {
+  list-style: none;
 }
 
-header .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 5;
+}
+h2, h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
+p {
+  font-weight: 500;
 }
 
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
+section .content {
+  display: none;
+  margin: 0;
+  padding: 80px 0px 100px 75px;
 }
 
-header a:hover{
-    color: gray;
+#inicio:checked ~ section .content-1,
+#eventos:checked ~ section .content-2,
+#proyectos:checked ~ section .content-3,
+#publicaciones:checked ~ section .content-4,
+#miembros:checked ~ section .content-5,
+#contacto:checked ~ section .content-6 {
+  display: block;
 }
 
-#inicio {
-    padding: 100px 12px;
-}
+@media (min-width: 850px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-#eventos{
-    padding: 100px 12px;
-}
-
-#proyectos{
-    padding: 100px 12px;
-}
-
-#publicaciones {
-    padding: 100px 12px;
-}
-
-#miembros{
-    padding: 100px 12px;
-}
-
-#contacto{
-    padding: 100px 12px;
-}
-
-
-@media (min-width: 850px){    
-
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-
-    #pulicaciones {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #publicaciones .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #publicaciones h2{
-        margin-top: 0px;
-    }
-
-    #publicaciones .img-container{
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 400px; 
-    }
-
-    footer {
-        justify-content: flex-end;
-    }
-}
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+} 

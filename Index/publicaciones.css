@@ -1,45 +1,7 @@
-/* COLORS */
-/* MIXINS RESPONSIVE */
-/* GENERAL STYLES */
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-* {
-    margin: 0;
-    padding: 0;
-}
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    height: 100%;
-}
-body {
-    font-size: 1.5rem;
-    font-family: 'Alata', sans-serif;
-    background-color: #fff;
-    color: #000;
-    font-weight: 400;
-}
-/* TEXT */
-a, a:visited, a:hover {
-    text-decoration: none;
-}
-li {
-    list-style: none;
-}
-h1, h2, h3 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-p {
-    font-weight: 500;
-}
-
 /* ARTICLES*/
 .article-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 0;
 }
 
 .article-container h3 {
@@ -81,15 +43,22 @@ p {
 }
 
 .article-right a{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    width: 105px;
-    border-radius: 10px;
+    display: flex;
+    margin: 10px 10px 10px 0px;
+    justify-content: end;
+}
+.article-right .article-description .description-title{
+    margin: 0px 0px 10px 0px;
+}
+.read-more-text {
+    display: none;
 }
 
-.article-right .article-description, .article-right a, .article-right .article-description .description-title{
-    margin: 0px 0px 10px 0px;
+.article-description label{
+    margin: 10px 10px 10px 0px;
+}
+.read-more-text label{
+    margin: 10px 10px 10px 0px;
 }
 
 .article .article-right h3.article-title {
@@ -97,6 +66,201 @@ p {
     margin: 24px 0 10px 0;
     color: #218bbb;
     text-transform: uppercase;
+}
+#ch {
+    display: none;
+}
+
+#ch:checked ~ .read-more-text {
+    display: block;
+}
+
+#ch:checked ~ label {
+    display: none;
+}
+
+#ch:checked ~ a {
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px 10px 0px;
+}
+
+#ch2 {
+    display: none;
+}
+
+#ch2:checked ~ .read-more-text {
+    display: block;
+}
+
+#ch2:checked ~ label {
+    display: none;
+}
+
+#ch2:checked ~ a {
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px 10px 0px;
+}
+#ch3 {
+    display: none;
+}
+
+#ch3:checked ~ .read-more-text {
+    display: block;
+}
+
+#ch3:checked ~ label {
+    display: none;
+}
+
+#ch3:checked ~ a {
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px 10px 0px;
+}
+#ch4 {
+    display: none;
+}
+
+#ch4:checked ~ .read-more-text {
+    display: block;
+}
+
+#ch4:checked ~ label {
+    display: none;
+}
+
+#ch4:checked ~ a {
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px 10px 0px;
+}
+#ch5 {
+    display: none;
+}
+
+#ch5:checked ~ .read-more-text {
+    display: block;
+}
+
+#ch5:checked ~ label {
+    display: none;
+}
+
+#ch5:checked ~ a {
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px 10px 0px;
+}
+#ch6 {
+    display: none;
+}
+
+#ch6:checked ~ .read-more-text {
+    display: block;
+}
+
+#ch6:checked ~ label {
+    display: none;
+}
+
+#ch6:checked ~ a {
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px 10px 0px;
+}
+#ch7 {
+    display: none;
+}
+
+#ch7:checked ~ .read-more-text {
+    display: block;
+}
+
+#ch7:checked ~ label {
+    display: none;
+}
+
+#ch7:checked ~ a {
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px 10px 0px;
+}#ch8 {
+    display: none;
+}
+
+#ch8:checked ~ .read-more-text {
+    display: block;
+}
+
+#ch8:checked ~ label {
+    display: none;
+}
+
+#ch8:checked ~ a {
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px 10px 0px;
+}#ch9 {
+    display: none;
+}
+
+#ch9:checked ~ .read-more-text {
+    display: block;
+}
+
+#ch9:checked ~ label {
+    display: none;
+}
+
+#ch9:checked ~ a {
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px 10px 0px;
+}#ch10 {
+    display: none;
+}
+
+#ch10:checked ~ .read-more-text {
+    display: block;
+}
+
+#ch10:checked ~ label {
+    display: none;
+}
+
+#ch10:checked ~ a {
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px 10px 0px;
+}#ch11 {
+    display: none;
+}
+
+#ch11:checked ~ .read-more-text {
+    display: block;
+}
+
+#ch11:checked ~ label {
+    display: none;
+}
+
+#ch11:checked ~ a {
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px 10px 0px;
+}
+
+.article label {
+    margin-top:12px ;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 125px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
 }
 
 @media (max-width: 550px) {
@@ -116,4 +280,5 @@ p {
     .article .article-left .article-date {
         padding: 10px;
     }
+
 }

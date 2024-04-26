@@ -1,15 +1,8 @@
+// Lógica para Teachers
 const teachersCarousel = document.querySelector(".teachers-carousel");
-const studentsCarousel = document.querySelector(".students-carousel");
-const exStudentsCarousel = document.querySelector(".ex-students-carousel");
-
 const leftTeachersBtn = document.getElementById("leftTeachers");
 const rightTeachersBtn = document.getElementById("rightTeachers");
-const leftStudentsBtn = document.getElementById("leftStudents");
-const rightStudentsBtn = document.getElementById("rightStudents");
-const leftExStudentsBtn = document.getElementById("leftExStudents");
-const rightExStudentsBtn = document.getElementById("rightExStudents");
 
-// Lógica para Teachers
 leftTeachersBtn.addEventListener("click", () => {
     teachersCarousel.scrollLeft -= teachersCarousel.offsetWidth;
 });
@@ -18,6 +11,10 @@ rightTeachersBtn.addEventListener("click", () => {
 });
 
 // Lógica para Students
+const studentsCarousel = document.querySelector(".students-carousel");
+const leftStudentsBtn = document.getElementById("leftStudents");
+const rightStudentsBtn = document.getElementById("rightStudents");
+
 leftStudentsBtn.addEventListener("click", () => {
     studentsCarousel.scrollLeft -= studentsCarousel.offsetWidth;
 });
@@ -26,6 +23,10 @@ rightStudentsBtn.addEventListener("click", () => {
 });
 
 // Lógica para Ex Students
+const exStudentsCarousel = document.querySelector(".ex-students-carousel");
+const leftExStudentsBtn = document.getElementById("leftExStudents");
+const rightExStudentsBtn = document.getElementById("rightExStudents");
+
 leftExStudentsBtn.addEventListener("click", () => {
     exStudentsCarousel.scrollLeft -= exStudentsCarousel.offsetWidth;
 });
