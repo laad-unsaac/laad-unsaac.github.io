@@ -24,265 +24,351 @@
 
 </head>
 <body>
-    <header>
-        <div class="container">
-            <p class="logo">
-                <img src="Index/imagenes/logo.png" alt="logo-icono">
-            </p>
-            <nav>
-                <a href="#inicio">Home</a>
-                <a href="#eventos">Events</a>
-                <a href="#proyectos">Projects</a>
-                <a href="#publicaciones">Publications</a>
-                <a href="#miembros">Members</a>
-                <a href="#contacto">Contact</a>
-                <a href="index.html">EN</a>
-            </nav>
-        </div>
-    </header>
-
-    <section id="inicio">
-        <div class="contenido">
-            <div class="box1">
-                <h1>LAAD</h1>
-                <p>Welcome to the Laboratory of Algorithms and Data Analysis (LAAD) at the National University of San Antonio Abad del Cusco (UNSAAC)!</p>
-                <p>At LAAD, located in the Professional School of Computer Engineering and Systems, we are dedicated to the research and application of advanced algorithms and data analysis.</p>
-                <p>Explore our site to discover exciting projects, events, and opportunities to contribute to the advancement of science and technology.</p>
-                <p>Join us in exploring new frontiers in computer science and data science at LAAD UNSAAC!</p>
+        <header>
+            <div class="container">
+                <p class="logo">
+                    <img src="Index/imagenes/logo.png" alt="logo-icono">
+                </p>
+                <nav>
+                    <label for="inicio" class="inicio">Home</label>
+                    <label for="eventos" class="eventos">Events</label>
+                    <label for="proyectos" class="proyectos">Projects</label>
+                    <label for="publicaciones" class="publicaciones">Publications</label>
+                    <label for="miembros" class="miembros">Members</label>
+                    <label for="contacto" class="contacto">Contacto</label>
+                    <a href="index.html">EN</a>
+                    <div class="slider"></div>
+                </nav>
             </div>
-            <!-- carimagene -->
-            <div class="box1">
-                <img src="Index/imagenes/laad.png" alt="Imagen 1">
-            </div>
-        </div>
-    </section>
-
-    <section id="eventos">
-        <div class="event-container">
-            <h1>Events</h1>
-        </div>
-    </section>
-
-    <section id="proyectos">
-        <div class="project-container">
-            <h1>Projects</h1>
-        </div>
-    </section>
-    
-    <section id="publicaciones">
-        <div class="article-container">
-            <h1>Publications</h1>
-            <div class="article">
-                <div class="article-left">
-                    <div class="icon">
-                        <i class="fa-solid fa-newspaper"></i>
+        </header>
+        <input type="radio" name="slider" checked id="inicio">
+        <input type="radio" name="slider" id="eventos">
+        <input type="radio" name="slider" id="proyectos">
+        <input type="radio" name="slider" id="publicaciones">
+        <input type="radio" name="slider" id="miembros">
+        <input type="radio" name="slider" id="contacto">
+        
+        <section>
+            <div class="content content-1">
+                <div class="contenido">
+                    <div class="box1">
+                        <h1>LAAD</h1>
+                        <p>Welcome to the Laboratory of Algorithms and Data Analysis (LAAD) at the National University of San Antonio Abad del Cusco (UNSAAC)!</p>
+                        <p>At LAAD, located in the Professional School of Computer Engineering and Systems, we are dedicated to the research and application of advanced algorithms and data analysis.</p>
+                        <p>Explore our site to discover exciting projects, events, and opportunities to contribute to the advancement of science and technology.</p>
+                        <p>Join us in exploring new frontiers in computer science and data science at LAAD UNSAAC!</p>
                     </div>
-                </div>
-                <div class="article-right">
-                    <h3 class="article-title">1. "Social spider algorithm approach for clustering"</h3>
-                    <p class="article-autors">Autors: Harley Vera-Olivera, José Luis Soncco-Álvarez, Lauro Enciso-Rodas </p>
-                    <div class="article-description">
-                        <div class="description-title"> Abstract: </div>
-                        <p>Clustering is a popular data analysis technique to identify homogeneous groups of
-                            objects based on the values of their attributes, used in many disciplines and
-                            applications. This extended abstract of
-                            our undergraduate thesis for obtaining the
-                            engineer degree in informatics and systems, presents an approach based on the
-                            Social Spider Optimization (SSO) algorithm for optimizing clusters of data, taking as metric the sum of euclidean distances. Other important algorithms of the
-                            literature were implemented in order to
-                            make comparisons: K-means algorithm,
-                            and a Genetic Algorithm (GA) for Clustering. Experiments were performed using 5 datasets taken from the UCI Machine Learning Repository, each algorithm
-                            was executed many times and then the following measures were calculated: mean,
-                            median, minimum, and maximum values
-                            of the results. These experiments showed
-                            that the SSO algorithm outperforms the
-                            K- means algorithm, and it has results
-                            equally competitive as the GA. All these
-                            results were confirmed by statistical tests
-                            performed over the outputs of the algorithm.</p>
+                    <!-- carimagene -->
+                    <div class="box1">
+                        <img src="Index/imagenes/laad.png" alt="Imagen 1">
                     </div>
-                    <a href="https://ceur-ws.org/Vol-1743/paper14.pdf" target="_blank"> <u>READ MORE</u></a>
                 </div>
             </div>
-            <div class="article">
-                <div class="article-left">
-                    <div class="icon">
-                        <i class="fa-solid fa-newspaper"></i>
-                    </div>
-                </div>
-                <div class="article-right">
-                    <h3 class="article-title">2. "Trajectory Anomaly Detection based on Similarity Analysis"</h3>
-                    <p class="article-autors">Autors: Gerar F. Quispe-Torres, Germain Garcia-Zanabria, Harley Vera-Olivera & Lauro Enciso-Rodas</p>
-                    <div class="article-description">
-                        <div class="description-title">Abstract: </div>
-                        <p>Automatic trajectory processing has multiple applications, mainly due to the wide availability of the data. Trajectory data have a significant practical value, making possible the modeling of various problems such as surveillance and tracking devices, detect anomaly trajectories, identifying illegal and adverse activity. In this study, we show a comparative analysis of the performance of two descriptors to detect anomaly trajectories. We define Wavelet and Fourier transforms as trajectory descriptors to generate characteristics and subsequently detect anomalies. The experiments emphasize performance in the description in the coefficient feature space. For that, we used unsupervised learning, specifically clustering techniques, to generate subsets and identify which are irregular. The implications of the study demonstrate that it is possible to use descriptors in trajectories for automatic anomaly detection and the use of unsupervised learning methods that automatically segment the required information. The performance and comparative analysis of our study are demonstrated through experiments and a case study considering synthetic and real data sets that leave evidence of our contribution.</p>
-                    </div>
-                    <a href="https://ieeexplore.ieee.org/document/9639966" target="_blank"><u>READ MORE</u></a>
+            <div class="content content-2">
+                <div class="event-container">
+                    <h1>Events</h1>
                 </div>
             </div>
-            <div class="article">
-                <div class="article-left">
-                    <div class="icon">
-                        <i class="fa-solid fa-newspaper"></i>
-                    </div>
-                </div>
-                <div class="article-right">
-                    <h3 class="article-title">3. "Clustering Analysis for Traffic Jam Detection for Intelligent Transportation System"</h3>
-                    <p class="article-autors">Autors: Harley Vera-Olivera, José Luis Soncco-Álvarez and Edwin Alvarez-Mamani </p>
-                    <div class="article-description">
-                        <div class="description-title">Abstract: </div>
-                        <p>
-                            The growth of cities and the mobility of their inhabitants often generate traffic jams. In order to diminish this problem, cities began to implement Intelligent Transportation Systems (ITS), such as real-time control and monitoring of public transportation buses, smart traffic lights, mobile applications to inform passengers. ITS are a reliable source of data collection for further analysis. This research aims to perform a clustering analysis to detect traffic jams, for which the Parallel Social Spider Optimization (P-SSO) algorithm was used. The choice of the P-SSO algorithm was made based on the previous results where the P-SSO algorithm was compared with the K-means and Social Spider Optimization (SSO) algorithms to solve clustering problems. On the first stage of this research, the P-SSO algorithm was used to define traffic jam states. In the second stage, the P-SSO algorithm was used to detect traffic jam areas based on the geospatial data generated by public transport buses in Cusco-Perú. This clustering analysis was performed on the main streets of the city between June and August 2019. Further, an application was developed that allows to check graphically the clusters obtained.</p>
-                    </div>
-                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-04447-2_5" target="_blank"><u>READ MORE</u></a>
-                </div>
+            <div class="content content-3">
+              <div class="project-container">
+                  <h1>Projects</h1>
+              </div>
             </div>
-            <div class="article">
-                <div class="article-left">
-                    <div class="icon">
-                        <i class="fa-solid fa-newspaper"></i>
+            <div class="content content-4">
+                <div class="article-container">
+                    <h1>Publications</h1>
+                    <div class="article">
+                        <div class="article-left">
+                            <div class="icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="article-right">
+                            <h3 class="article-title">1. "Social spider algorithm approach for clustering"</h3>
+                            <p class="article-autors">Autors: Harley Vera-Olivera, José Luis Soncco-Álvarez, Lauro Enciso-Rodas </p>
+                            <div class="article-description">
+                                <input id="ch" type="checkbox">
+                                <div class="description-title"> 
+                                    <p>Abstract:</p> 
+                                </div>
+                                <p>Clustering is a popular data analysis technique to identify homogeneous groups of
+                                objects based on the values of their attributes, used in many disciplines and
+                                applications. This extended abstract of
+                                our undergraduate thesis for obtaining the
+                                engineer degree in informatics and systems, presents an approach</p>
+                                    
+                                <div class="read-more-text">
+                                    
+                                    <p> based on the
+                                        Social Spider Optimization(SSO) algorithm for optimizing clusters of data, taking as metric       the sum of euclidean distances. Other important algorithms of the
+                                    literature were implemented in order to
+                                    make comparisons: K-means algorithm,
+                                    and a Genetic Algorithm (GA) for Clustering. Experiments were performed using 5 datasets taken from the UCI Machine Learning Repository, each algorithm
+                                    was executed many times and then the following measures were calculated: mean,
+                                    median, minimum, and maximum values
+                                    of the results. These experiments showed
+                                    that the SSO algorithm outperforms the
+                                    K- means algorithm, and it has results
+                                    equally competitive as the GA. All these
+                                    results were confirmed by statistical tests
+                                    performed over the outputs of the algorithm.</p>
+                                    <label for="ch">Read less...</label>
+                                </div>
+                                <label for="ch">Read More ...</label>
+                                <a href="https://ceur-ws.org/Vol-1743/paper14.pdf" target="_blank"> <u>link to pdf or webpage</u></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="article-right">
-                    <h3 class="article-title">4. "I see you: A Vehicle-Pedestrian Interaction Dataset from Traffic Surveillance Cameras"</h3>
-                    <p class="article-autors">Autors: Hanan Quispe, Jorshinno Sumire, Patricia Condori, Edwin Alvarez, Harley Vera </p>
-                    <div class="article-description">
-                        <div class="description-title">Abstract: </div>
-                        <p>The development of autonomous vehicles arises new challenges in urban traffic scenarios where vehicle-pedestrian interactions are frequent e.g. vehicle yields to pedestrians, pedestrian slows down due approaching to the vehicle. Over the last years, several datasets have been developed to model these interactions. However, available datasets do not cover near-accident scenarios that our dataset covers. We introduce I see you, a new vehicle-pedestrian interaction dataset that tackles the lack of trajectory data in near-accident scenarios using YOLOv5 and camera calibration methods. I see you consist of 170 near-accident occurrences in seven intersections in Cusco-Peru. This new dataset and pipeline code are available on GitHub.</p>
+                    <div class="article">
+                        <div class="article-left">
+                            <div class="icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="article-right">
+                            <h3 class="article-title">2. "Trajectory Anomaly Detection based on Similarity Analysis"</h3>
+                            <p class="article-autors">Autors: Gerar F. Quispe-Torres, Germain Garcia-Zanabria, Harley Vera-Olivera & Lauro Enciso-Rodas</p>
+                            <div class="article-description">
+                                <input id="ch2" type="checkbox">
+                                <div class="description-title">
+                                   <p> Abstract: </p> 
+                                </div>
+                                <p>Automatic trajectory processing has multiple applications, mainly due to the wide availability of the data. Trajectory data have a significant practical value, making possible the modeling of various problems such as surveillance and tracking devices, detect anomaly trajectories, identifying illegal and 
+                                </p>   
+                                <div class="read-more-text">
+                                <p>adverse activity. In this study, we show a comparative analysis of the performance of two descriptors to detect anomaly trajectories. We define Wavelet and Fourier transforms as trajectory descriptors to generate characteristics and subsequently detect anomalies. The experiments emphasize performance in the description in the coefficient feature space. For that, we used unsupervised learning, specifically clustering techniques, to generate subsets and identify which are irregular. The implications of the study demonstrate that it is possible to use descriptors in trajectories for automatic anomaly detection and the use of unsupervised learning methods that automatically segment the required information. The performance and comparative analysis of our study are demonstrated through experiments and a case study considering synthetic and real data sets that leave evidence of our contribution.</p>
+                                <label for="ch2">Read Less...</label>
+                            </div>
+                            </div>
+                            <label for="ch2">Read More...</label>
+                            <a href="https://ieeexplore.ieee.org/document/9639966" target="_blank"><u>link to pdf or webpage</u></a>
+                        </div>
                     </div>
-                    <a href="source/I_see_you_A_Vehicle-Pedestrian_Interaction_Dataset.pdf" target="_blank"><u>READ MORE</u></a>
-                </div>
-            </div>
-            <div class="article">
-                <div class="article-left">
-                    <div class="icon">
-                        <i class="fa-solid fa-newspaper"></i>
+                    <div class="article">
+                        <div class="article-left">
+                            <div class="icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="article-right">
+                            <h3 class="article-title">3. "Clustering Analysis for Traffic Jam Detection for Intelligent Transportation System"</h3>
+                            <p class="article-autors">Autors: Harley Vera-Olivera, José Luis Soncco-Álvarez and Edwin Alvarez-Mamani </p>
+                            <div class="article-description">
+                                <input id="ch3" type="checkbox">
+                                <div class="description-title">
+                                    <p>Abstract: </p>
+                                </div>
+                                <p>
+                                    The growth of cities and the mobility of their inhabitants often generate traffic jams. In order to diminish this problem, cities began to implement Intelligent Transportation Systems (ITS), such as real-time control and monitoring of public transportation buses, smart traffic lights, mobile </p>
+                                    <div class="read-more-text">
+                                    <p>  applications to inform passengers. ITS are a reliable source of data collection for further analysis. This research aims to perform a clustering analysis to detect traffic jams, for which the Parallel Social Spider Optimization (P-SSO) algorithm was used. The choice of the P-SSO algorithm was made based on the previous results where the P-SSO algorithm was compared with the K-means and Social Spider Optimization (SSO) algorithms to solve clustering problems. On the first stage of this research, the P-SSO algorithm was used to define traffic jam states. In the second stage, the P-SSO algorithm was used to detect traffic jam areas based on the geospatial data generated by public transport buses in Cusco-Perú. This clustering analysis was performed on the main streets of the city between June and August 2019. Further, an application was developed that allows to check graphically the clusters obtained.</p>
+                                    <label for="ch3">Read Less...</label>
+                                </div>
+                                <label for="ch3">Read More...</label>
+                            </div>
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-031-04447-2_5" target="_blank"><u>link to pdf or webpage</u></a>
+                        </div>
                     </div>
-                </div>
-                <div class="article-right">
-                    <h3 class="article-title">5. "Feature-based Trajectory Anomaly Detection"</h3>
-                    <p class="article-autors">Autors: Gerar F. Quispe-Torres, Lauro Enciso-Rodas, Germain Garcia-Zanabria, Harley Vera </p>
-                    <div class="article-description">
-                        <div class="description-title">Abstract: </div>
-                        <p>The high availability of trajectory data in different fields makes it attractive to analyze and enhance its multiple practical applications. In particular, trajectory anomaly detection has a significant practical value, making it possible identifying trajectories that may indicate illegal and adverse activity in diverse areas such as surveillance, tracking devices, traffic, and people flow. This study presents a methodology to detect anomaly trajectories based on their morphology features. For that, we follow two stages: (1) comparative analysis of the performance of two descriptors to group similar trajectories, and (2) trajectory anomaly detection based on their similarities. We define Wavelet and Fourier transforms as trajectory descriptors to generate characteristics and subsequently detect anomalies. Our experiments emphasize the measure of the performance in the description of the coefficient feature space using unsupervised learning, specifically clustering techniques, to create subsets and identify irregular ones. The study's implications demonstrate that it is possible to use descriptors in trajectories for automatic anomaly detection and the use of unsupervised learning to segment required information. Our study's performance and comparative analysis have been demonstrated throughout multiple experiments. We present some quantitative results using synthetic data sets as well as qualitative analysis throughout two case studies considering real data sets that leave evidence of our contribution. </p>
+                    <div class="article">
+                        <div class="article-left">
+                            <div class="icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="article-right">
+                            <h3 class="article-title">4. "I see you: A Vehicle-Pedestrian Interaction Dataset from Traffic Surveillance Cameras"</h3>
+                            <p class="article-autors">Autors: Hanan Quispe, Jorshinno Sumire, Patricia Condori, Edwin Alvarez, Harley Vera </p>
+                            <div class="article-description">
+                                <input type="checkbox" id="ch4">
+                                <div class="description-title">Abstract: </div>
+                                <p>The development of autonomous vehicles arises new challenges in urban traffic scenarios where vehicle-pedestrian interactions are frequent e.g. vehicle yields to pedestrians, pedestrian slows down due approaching to the vehicle. Over the last years, several datasets have been developed to model these </p>
+                                <div class="read-more-text">
+                                    <p>interactions. However, available datasets do not cover near-accident scenarios that our dataset covers. We introduce I see you, a new vehicle-pedestrian interaction dataset that tackles the lack of trajectory data in near-accident scenarios using YOLOv5 and camera calibration methods. I see you consist of 170 near-accident occurrences in seven intersections in Cusco-Peru. This new dataset and pipeline code are available on GitHub.</p>
+                                    <label for="ch4">Read Less...</label>
+                                </div>
+                                <label for="ch4">Read More...</label>
+                            </div>
+                            <a href="source/I_see_you_A_Vehicle-Pedestrian_Interaction_Dataset.pdf" target="_blank"><u>link to pdf or webpage</u></a>
+                        </div>
                     </div>
-                    <a href="https://www.clei.org/cleiej/index.php/cleiej/article/view/538" target="_blank"><u>READ MORE</u></a>
-                </div>
-            </div>
-            <div class="article">
-                <div class="article-left">
-                    <div class="icon">
-                        <i class="fa-solid fa-newspaper"></i>
+                    <div class="article">
+                        <div class="article-left">
+                            <div class="icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="article-right">
+                            <h3 class="article-title">5. "Feature-based Trajectory Anomaly Detection"</h3>
+                            <p class="article-autors">Autors: Gerar F. Quispe-Torres, Lauro Enciso-Rodas, Germain Garcia-Zanabria, Harley Vera </p>
+                            <div class="article-description">
+                                <input type="checkbox" id="ch5">
+                                <div class="description-title">Abstract: </div>
+                                <p>The high availability of trajectory data in different fields makes it attractive to analyze and enhance its multiple practical applications. In particular, trajectory anomaly detection has a significant practical value, making it possible identifying trajectories that may indicate illegal and adverse activity  </p>
+                                <div class="read-more-text">
+                                    <p>in diverse areas such as surveillance, tracking devices, traffic, and people flow. This study presents a methodology to detect anomaly trajectories based on their morphology features. For that, we follow two stages: (1) comparative analysis of the performance of two descriptors to group similar trajectories, and (2) trajectory anomaly detection based on their similarities. We define Wavelet and Fourier transforms as trajectory descriptors to generate characteristics and subsequently detect anomalies. Our experiments emphasize the measure of the performance in the description of the coefficient feature space using unsupervised learning, specifically clustering techniques, to create subsets and identify irregular ones. The study's implications demonstrate that it is possible to use descriptors in trajectories for automatic anomaly detection and the use of unsupervised learning to segment required information. Our study's performance and comparative analysis have been demonstrated throughout multiple experiments. We present some quantitative results using synthetic data sets as well as qualitative analysis throughout two case studies considering real data sets that leave evidence of our contribution. </p>
+                                    <label for="ch5">Read Less...</label>
+                                </div>
+                                <label for="ch5">Read More...</label>
+                            </div>
+                            <a href="https://www.clei.org/cleiej/index.php/cleiej/article/view/538" target="_blank"><u>link to pdf or webpage</u></a>
+                        </div>
                     </div>
-                </div>
-                <div class="article-right">
-                    <h3 class="article-title">6. "Towards accurate building recognition using convolutional neural networks"</h3>
-                    <p class="article-autors">Autors: Jeanfranco D. Farfan-Escobedo, Lauro Enciso-Rodas, John E. Vargas-Muñoz </p>
-                    <div class="article-description">
-                        <div class="description-title">Abstract: </div>
-                        <p>Building recognition from images is a challenging task since pictures can be taken from different angles and under different illumination conditions. Most of the building recognition methods use local and global handcrafted image features and do not consider the rejection scenario, where the method have to be capable of identifying if a given image does not belong to any of the classes of interest. We propose a method based on convolutional neural networks that obtain effective feature vectors to perform accurate classification of buildings. Additionally, we analyze and propose methods for the problem of classification with rejection.</p>
+                    <div class="article">
+                        <div class="article-left">
+                            <div class="icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="article-right">
+                            <h3 class="article-title">6. "Towards accurate building recognition using convolutional neural networks"</h3>
+                            <p class="article-autors">Autors: Jeanfranco D. Farfan-Escobedo, Lauro Enciso-Rodas, John E. Vargas-Muñoz </p>
+                            <div class="article-description">
+                                <input type="checkbox" id="ch6">
+                                <div class="description-title">Abstract: </div>
+                                <p>Building recognition from images is a challenging task since pictures can be taken from different angles and under different illumination conditions. Most of the building recognition methods use local and global handcrafted image features and do not consider the rejection scenario, where the method have to </p>
+                                <div class="read-more-text">
+                                    <p> be capable of identifying if a given image does not belong to any of the classes of interest. We propose a method based on convolutional neural networks that obtain effective feature vectors to perform accurate classification of buildings. Additionally, we analyze and propose methods for the problem of classification with rejection.</p>
+                                    <label for="ch6">Read Less...</label>
+                                </div>
+                                <label for="ch6">Read More...</label>
+                            </div>
+                            <a href="https://ieeexplore.ieee.org/document/8079686" target="_blank"><u>link to pdf or webpage</u></a>
+                        </div>
                     </div>
-                    <a href="https://ieeexplore.ieee.org/document/8079686" target="_blank"><u>READ MORE</u></a>
-                </div>
-            </div>
-            <div class="article">
-                <div class="article-left">
-                    <div class="icon">
-                        <i class="fa-solid fa-newspaper"></i>
+                    <div class="article">
+                        <div class="article-left">
+                            <div class="icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="article-right">
+                            <h3 class="article-title">7. "Software as a service google apps in the internal communication of the national university of san antonio abad del cusco"</h3>
+                            <p class="article-autors">AUTORS: Hernán Nina, Lauro Enciso </p>
+                            <div class="article-description">
+                                <input type="checkbox" id="ch7">
+                                <div class="description-title">ABSTRACT: </div>
+                                <p>The internal communication in public universities is an unexplored field, however the previous
+                                    investigations considered to internal communication as a strategic element and essential to the success of
+                                    an organization. You can improve internal communication using digital channels that enhance and
+                                </p>
+                                <div class="read-more-text">
+                                    <p>
+                                    simplify the variety of traditional channels. The objective of the research is determined what extent
+                                    applications in the cloud of Google Apps for Education improve internal communication between
+                                    members of the university community. The results of the research reveal that the use of the Software as a
+                                    Service Google Apps does not substantially improve internal communication among members of the
+                                    university community. However, we have identified some factors that prevent the use of Google Apps for
+                                    Education, such as limitations in computer infrastructure, low level of knowledge in computing, limited
+                                    use of digital tools in academic activities and the absence of a strategic plan for internal communication.</p>
+                                        <label for="ch7">Read Less...</label>
+                                </div>
+                                <label for="ch7">Read More...</label>
+                            </div>
+                            <a href="https://ieomsociety.org/bogota2017/papers/113.pdf" target="_blank"><u>link to pdf or webpage</u></a>
+                        </div>
                     </div>
-                </div>
-                <div class="article-right">
-                    <h3 class="article-title">7. "Software as a service google apps in the internal communication of the national university of san antonio abad del cusco"</h3>
-                    <p class="article-autors">AUTORS: Hernán Nina, Lauro Enciso </p>
-                    <div class="article-description">
-                        <div class="description-title">ABSTRACT: </div>
-                        <p>The internal communication in public universities is an unexplored field, however the previous
-                            investigations considered to internal communication as a strategic element and essential to the success of
-                            an organization. You can improve internal communication using digital channels that enhance and
-                            simplify the variety of traditional channels. The objective of the research is determined what extent
-                            applications in the cloud of Google Apps for Education improve internal communication between
-                            members of the university community. The results of the research reveal that the use of the Software as a
-                            Service Google Apps does not substantially improve internal communication among members of the
-                            university community. However, we have identified some factors that prevent the use of Google Apps for
-                            Education, such as limitations in computer infrastructure, low level of knowledge in computing, limited
-                            use of digital tools in academic activities and the absence of a strategic plan for internal communication.</p>
+                    <div class="article">
+                        <div class="article-left">
+                            <div class="icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="article-right">
+                            <h3 class="article-title">8. "Application of convolutional neural networks for static hand gestures recognition under different invariant features"</h3>
+                            <p class="article-autors">Autors: C. Jose L. Flores, A. E. Gladys Cutipa, R. Lauro Enciso    </p>
+                            <div class="article-description">
+                                <input type="checkbox" id="ch8">
+                                <div class="description-title">Abstract: </div>
+                                <p>The present work proposes to recognize the static hand gestures taken under invariations features as scale, rotation, translation, illumination, noise and background. We use the alphabet of sign language of Peru (LSP). For this purpose, digital image processing techniques are used to eliminate or reduce 
+                                </p>
+                                <div class="read-more-text">
+                                    <p>noise, to improve the contrast under a variant illumination, to separate the hand from the background of the image and finally detect and cut the region containing the hand gesture. We use of convolutional neural networks (CNN) to classify the 24 hand gestures. Two CNN architectures were developed with different amounts of layers and parameters per layer. The tests showed that the first CNN has an accuracy of 95.37% and the second CNN has an accuracy of 96.20% in terms of recognition of the 24 static hand gestures using the database developed. We compared the two architectures developed in accuracy level for each type of invariance presented in this paper. We compared the two architectures developed and usual techniques of machine learning in results of accuracy.</p>
+                                    <label for="ch8">Read Less...</label>
+                                </div>
+                                <label for="ch8">Read More...</label>
+                            </div>
+                            <a href="https://ieeexplore.ieee.org/document/8079727" target="_blank"><u>link to pdf or webpage</u></a>
+                        </div>
                     </div>
-                    <a href="https://ieomsociety.org/bogota2017/papers/113.pdf" target="_blank"><u>READ MORE</u></a>
-                </div>
-            </div>
-            <div class="article">
-                <div class="article-left">
-                    <div class="icon">
-                        <i class="fa-solid fa-newspaper"></i>
+                    <div class="article">
+                        <div class="article-left">
+                            <div class="icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="article-right">
+                            <h3 class="article-title">9. "Peruvian Sign Language Recognition Using a Hybrid Deep Neural Network"</h3>
+                            <p class="article-autors">Autors: Yuri Vladimir Huallpa Vargas, Naysha Naydu Diaz Ccasa & Lauro Enciso Rodas  </p>
+                            <div class="article-description">
+                                <input type="checkbox" name="" id="ch9">
+                                <div class="description-title">Abstract: </div>
+                                <p>Hearing impaired people have the ability to communicate with their hands and interpret sign language (SL), but this builds a communication gap with normal people. There are models for SL recognition that have images sequence RGB as input; however, the movements of the body in 3D space is necessary 
+                                </p>
+                                <div class="read-more-text">
+                                    <p>to consider due to the complexity of the gestures. We built a model for Peruvian sign language recognition (PSL) to Spanish composed by 4 phases; first, the preprocessing phase in charge to process RGB, depth and skeleton streams obtained through the Kinect sensor v.1; second, the feature extraction which learn spatial information through 3 types of convolutional neural network (CNN); third, the bidirectional long short term memory (BLSTM) with residual connections in charge to reduced and encode the information. Finally, a decoder with attention mechanism and maxout network which learn the temporal information. Our proposed model is evaluated in LSA64 and ourself-built dataset. The experimental results show significant improvement compared to other models evaluated in these dataset .</p>
+                                    <label for="ch9">Read Less...</label>
+                                </div>
+                                <label for="ch9">Read More...</label>
+                            </div>
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-030-46140-9_16" target="_blank"><u>link to pdf or webpage</u></a>
+                        </div>
                     </div>
-                </div>
-                <div class="article-right">
-                    <h3 class="article-title">8. "Application of convolutional neural networks for static hand gestures recognition under different invariant features"</h3>
-                    <p class="article-autors">Autors: C. Jose L. Flores, A. E. Gladys Cutipa, R. Lauro Enciso    </p>
-                    <div class="article-description">
-                        <div class="description-title">Abstract: </div>
-                        <p>The present work proposes to recognize the static hand gestures taken under invariations features as scale, rotation, translation, illumination, noise and background. We use the alphabet of sign language of Peru (LSP). For this purpose, digital image processing techniques are used to eliminate or reduce noise, to improve the contrast under a variant illumination, to separate the hand from the background of the image and finally detect and cut the region containing the hand gesture. We use of convolutional neural networks (CNN) to classify the 24 hand gestures. Two CNN architectures were developed with different amounts of layers and parameters per layer. The tests showed that the first CNN has an accuracy of 95.37% and the second CNN has an accuracy of 96.20% in terms of recognition of the 24 static hand gestures using the database developed. We compared the two architectures developed in accuracy level for each type of invariance presented in this paper. We compared the two architectures developed and usual techniques of machine learning in results of accuracy.</p>
+                    <div class="article">
+                        <div class="article-left">
+                            <div class="icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="article-right">
+                            <h3 class="article-title">10. "Multi-Objective Optimization Algorithm for Center-Based Clustering"</h3>
+                            <p class="article-autors">Autors: Jared Leon, Boris Chullo-Llave, Lauro Enciso-Rodas, 
+                                Jose Luis Soncco-Alvarez </p>
+                            <div class="article-description">
+                                <input type="checkbox" name="" id="ch10">
+                                <div class="description-title">Abstract: </div>
+                                <p>Center-based clustering is a set of clustering problems that require finding a single element, a center, to
+                                    represent an entire cluster. The algorithms that solve this type of problems are very efficient for clustering
+                                    large and high-dimensional datasets. In this paper, we propose a similar heuristic used in </p>
+                                <div class="read-more-text">
+                                    <p>Lloyd’s algorithm
+                                    to approximately solve (EMAX algorithm) a more robust variation of the k-means problem, namely the
+                                    EMAX problem. Also, a new center-based clustering algorithm (SSO-C) is proposed, which is based on a
+                                    swarm intelligence technique called Social Spider Optimization. This algorithm minimizes a multi-objective
+                                    optimization function defined as a weighted combination of the objective functions of the k-means and
+                                    EMAX problems. Also, an approximation algorithm for the discrete k-center problem is used as a local
+                                    search strategy for initializing the population. Results of the experiments showed that SSO-C algorithm is
+                                    suitable for finding maximum best values, however EMAX algorithm is better in finding median and mean
+                                    values.</p>
+                                        <label for="ch10">Read Less...</label>
+                                </div>
+                                <label for="ch10">Read More...</label>
+                            </div>
+                            <a href="source/A_Multi-Objective_Optimization_Algorithm_for_Cente.pdf" target="_blank"><u>link to pdf or webpage</u></a>
+                        </div>
                     </div>
-                    <a href="https://ieeexplore.ieee.org/document/8079727" target="_blank"><u>READ MORE</u></a>
-                </div>
-            </div>
-            <div class="article">
-                <div class="article-left">
-                    <div class="icon">
-                        <i class="fa-solid fa-newspaper"></i>
+                    <div class="article">
+                        <div class="article-left">
+                            <div class="icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="article-right">
+                            <h3 class="article-title">11. "Parallel Social Spider Optimization Algorithms with Island Model for the Clustering Problem"</h3>
+                            <p class="article-autors">Autors: Edwin Alvarez-Mamani, Lauro Enciso,Mauricio Ayala-Rincon, José Luis Soncco-Álvarez </p>
+                            <div class="article-description">
+                                <input type="checkbox" name="" id="ch11">
+                                <div class="description-title">Abstract: </div>
+                                <p>The digital age came with an extraordinary ability to generate data across organizations, people, and devices, data that needs to be analyzed, processed and stored. A well-known technique for analyzing this kind of data is Clustering. Many bio-inspired algorithms were proposed for this problem such as the 
+                                </p>
+                                <div class="read-more-text">
+                                    <p>Social Spider Optimization (SSO). In this work, we propose parallel island models of the SSO algorithm for the Clustering problem, using 24 processors for each parallel algorithm. Such models were implemented using static and dynamic topologies, and datasets from the UCI Machine Learning Repository used for the stage of experiments. The achieved average speedups range from 15 to 28 times faster than the SSO algorithm for large and small datasets, respectively, and a parallel model with static ring topology performs a little bit faster than the other parallel models. The parallel algorithms provide results with similar precision to the ones computed with the SSO algorithm.</p>
+                                    <label for="ch11">Read Less...</label>
+                                </div>
+                                <label for="ch11">Read More...</label>
+                            </div>
+                            <a href="https://www.researchgate.net/publication/351499947_Parallel_Social_Spider_Optimization_Algorithms_with_Island_Model_for_the_Clustering_Problem" target="_blank"><u>link to pdf</u></a>
+                        </div>
                     </div>
-                </div>
-                <div class="article-right">
-                    <h3 class="article-title">9. "Peruvian Sign Language Recognition Using a Hybrid Deep Neural Network"</h3>
-                    <p class="article-autors">Autors: Yuri Vladimir Huallpa Vargas, Naysha Naydu Diaz Ccasa & Lauro Enciso Rodas  </p>
-                    <div class="article-description">
-                        <div class="description-title">Abstract: </div>
-                        <p>Hearing impaired people have the ability to communicate with their hands and interpret sign language (SL), but this builds a communication gap with normal people. There are models for SL recognition that have images sequence RGB as input; however, the movements of the body in 3D space is necessary to consider due to the complexity of the gestures. We built a model for Peruvian sign language recognition (PSL) to Spanish composed by 4 phases; first, the preprocessing phase in charge to process RGB, depth and skeleton streams obtained through the Kinect sensor v.1; second, the feature extraction which learn spatial information through 3 types of convolutional neural network (CNN); third, the bidirectional long short term memory (BLSTM) with residual connections in charge to reduced and encode the information. Finally, a decoder with attention mechanism and maxout network which learn the temporal information. Our proposed model is evaluated in LSA64 and ourself-built dataset. The experimental results show significant improvement compared to other models evaluated in these dataset .</p>
-                    </div>
-                    <a href="https://link.springer.com/chapter/10.1007/978-3-030-46140-9_16" target="_blank"><u>READ MORE</u></a>
-                </div>
-            </div>
-            <div class="article">
-                <div class="article-left">
-                    <div class="icon">
-                        <i class="fa-solid fa-newspaper"></i>
-                    </div>
-                </div>
-                <div class="article-right">
-                    <h3 class="article-title">10. "Multi-Objective Optimization Algorithm for Center-Based Clustering"</h3>
-                    <p class="article-autors">Autors: Jared Leon, Boris Chullo-Llave, Lauro Enciso-Rodas, 
-                        Jose Luis Soncco-Alvarez </p>
-                    <div class="article-description">
-                        <div class="description-title">Abstract: </div>
-                        <p>Center-based clustering is a set of clustering problems that require finding a single element, a center, to
-                            represent an entire cluster. The algorithms that solve this type of problems are very efficient for clustering
-                            large and high-dimensional datasets. In this paper, we propose a similar heuristic used in Lloyd’s algorithm
-                            to approximately solve (EMAX algorithm) a more robust variation of the k-means problem, namely the
-                            EMAX problem. Also, a new center-based clustering algorithm (SSO-C) is proposed, which is based on a
-                            swarm intelligence technique called Social Spider Optimization. This algorithm minimizes a multi-objective
-                            optimization function defined as a weighted combination of the objective functions of the k-means and
-                            EMAX problems. Also, an approximation algorithm for the discrete k-center problem is used as a local
-                            search strategy for initializing the population. Results of the experiments showed that SSO-C algorithm is
-                            suitable for finding maximum best values, however EMAX algorithm is better in finding median and mean
-                            values.</p>
-                    </div>
-                    <a href="source/A_Multi-Objective_Optimization_Algorithm_for_Cente.pdf" target="_blank"><u>READ MORE</u></a>
-                </div>
-            </div>
-            <div class="article">
-                <div class="article-left">
-                    <div class="icon">
-                        <i class="fa-solid fa-newspaper"></i>
-                    </div>
-                </div>
-                <div class="article-right">
-                    <h3 class="article-title">11. "Parallel Social Spider Optimization Algorithms with Island Model for the Clustering Problem"</h3>
-                    <p class="article-autors">Autors: Edwin Alvarez-Mamani, Lauro Enciso,Mauricio Ayala-Rincon, José Luis Soncco-Álvarez </p>
-                    <div class="article-description">
-                        <div class="description-title">Abstract: </div>
-                        <p>The digital age came with an extraordinary ability to generate data across organizations, people, and devices, data that needs to be analyzed, processed and stored. A well-known technique for analyzing this kind of data is Clustering. Many bio-inspired algorithms were proposed for this problem such as the Social Spider Optimization (SSO). In this work, we propose parallel island models of the SSO algorithm for the Clustering problem, using 24 processors for each parallel algorithm. Such models were implemented using static and dynamic topologies, and datasets from the UCI Machine Learning Repository used for the stage of experiments. The achieved average speedups range from 15 to 28 times faster than the SSO algorithm for large and small datasets, respectively, and a parallel model with static ring topology performs a little bit faster than the other parallel models. The parallel algorithms provide results with similar precision to the ones computed with the SSO algorithm.</p>
-                    </div>
-                    <a href="https://www.researchgate.net/publication/351499947_Parallel_Social_Spider_Optimization_Algorithms_with_Island_Model_for_the_Clustering_Problem" target="_blank"><u>READ MORE</u></a>
                 </div>
             </div>
             <div class="content content-5">
@@ -368,8 +454,8 @@
                         <ul class="carousel students-carousel">
                             <li class="card">
                                 <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                                <h2>Ibeth Janela del Pilar Cusi Diaz </h2>
-                                <span>Estudiante</span>
+                                <h2>Ibeth Janela del Pilar Cusi </h2>
+                                <span>Especialidad</span>
                                 <div class="red_social">
                                     <a href="#" class="fab fa-orcid"></a>
                                     <a href="#" class="fab fa-google-scholar"></a>
