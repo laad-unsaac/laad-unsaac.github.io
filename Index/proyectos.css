@@ -1,0 +1,56 @@
+
+.project-container {
+    max-width: 1200px;
+}
+
+.project-container .project {
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+}
+
+.project .project-left {
+    background: #222;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+}
+
+.project .project-left .fa-solid {
+    font-size: 30px;
+}
+
+.project-right {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+
+.project-right .project-title{
+    margin: 10px 0px 10px 0px;
+    font-size: 24px;
+    color: #218bbb;
+
+}
+
+.project-right .project-description {
+    margin: 10px 0px 10px 0px; 
+}
+
+.project-right .project-grant {
+    margin-bottom: 10px;
+}
+
+.project-right .project-date {
+    margin-bottom: 10px;
+}
+.project-right .project-funding {
+    margin-bottom: 10px;
+}
