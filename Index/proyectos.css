@@ -54,3 +54,15 @@
 .project-right .project-funding {
     margin-bottom: 10px;
 }
+@media (max-width: 550px) {
+    .project {
+        flex-direction: column;
+    }
+    .project .project-left {
+        padding: 0;
+        border-radius: 8px 8px 0 0;
+    }
+    .project .project-left {
+        padding: 13px;
+    }
+}
