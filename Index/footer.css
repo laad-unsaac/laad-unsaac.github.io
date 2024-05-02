@@ -1,5 +1,5 @@
 footer {
-  background-color: #233471;
+  background-color: #a13f36;
 }
 
 footer .grupo-1 {
@@ -100,20 +100,20 @@ footer .grupo-1 .red-social a {
   line-height: 25px;
   color: #fff;
   margin-right: 10px;
-  background-color: #2a3d80;
+  background-color: #a13f36;
   text-align: center;
   transition: all 300ms ease;
 }
 
 footer .grupo-1 .red-social a:hover {
-  color: gray;
+  color: black;
 }
 
 footer .grupo-2 {
-  background-color: #2a3d80;
+  background-color: #8b2d1f;
   padding: 15px 10px;
   text-align: center;
-  color: #747474;
+  color:rgb(203, 198, 198);
 }
 @media (max-width:800px) {
     footer .map {
