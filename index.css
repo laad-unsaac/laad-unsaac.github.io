@@ -81,6 +81,7 @@ header nav label:hover {
 #inicio:checked ~ nav label.inicio,
 #eventos:checked ~ nav label.eventos,
 #proyectos:checked ~ nav label.proyectos,
+#reconocimientos:checked ~ nav label.reconocimientos,
 #miembros:checked ~ nav label.miembros,
 #contacto:checked ~ nav label.contacto,
 #about:checked ~ nav label.about {
@@ -126,9 +127,10 @@ section .content {
 #inicio:checked ~ section .content-1,
 #eventos:checked ~ section .content-2,
 #proyectos:checked ~ section .content-3,
-#publicaciones:checked ~ section .content-4,
-#miembros:checked ~ section .content-5,
-#contacto:checked ~ section .content-6 {
+#reconocimientos:checked ~ section .content-4,
+#publicaciones:checked ~ section .content-5,
+#miembros:checked ~ section .content-6,
+#contacto:checked ~ section .content-7 {
   display: block;
 }
 
