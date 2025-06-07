@@ -1,0 +1,37 @@
+.contenedor {
+  width: 100%;
+  height: 350px;
+  background-color: #A13F36;
+  display: flex;
+  flex-direction: row; /* apilar horizontalmente */
+  align-items: center;
+  gap: 5%;
+
+  padding: 0 2rem;  /* puedes ajustar el relleno si lo necesitas */
+  margin: 0;        /* elimina los márgenes laterales */
+
+  box-sizing: border-box; /* muy importante para que el padding no afecte el 100% */
+  
+}
+
+/* Estilo para los dos cuadros internos */
+.box_a, .box_b {
+  width: 100%;
+  height: 95%;
+  background-color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+/* Diseño responsivo: apilados verticalmente en pantallas pequeñas */
+@media screen and (max-width: 750px) {
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box_a, .box_b {
+    width: 100%;
+  }
+}
