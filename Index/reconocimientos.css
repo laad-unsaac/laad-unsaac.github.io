@@ -84,14 +84,28 @@ hr {
 
 
 /* Responsive design */
-@media (max-width: 700px) {
-    .award-content,
-    .award-img {
+@media (max-width: 800px) {
+
+    .awards-container { 
+        padding: 0.5rem;
+    }
+    .award-content {
         flex: 100%;
+    }
+
+    .award-title > h1{
+        line-height: 1;
+        margin-top: 20rem;
     }
     
     .award-img {
+        flex: 100%;
         margin-top: 1rem;
+        justify-content: center;
+    }
+    
+    .award-img img {
+        max-width: 38rem;
     }
 }
 

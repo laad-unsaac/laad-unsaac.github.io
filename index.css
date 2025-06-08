@@ -92,7 +92,6 @@ input[type="radio"] {
   display: none;
 }
 
-
 /* TEXTO */
 a, a:visited, a:hover {
   text-decoration: none;
@@ -121,7 +120,7 @@ p {
 section .content {
   display: none;
   margin: 0;
-  padding: 80px 0px 100px 75px;
+  padding:  4rem 4rem 4rem 4rem;
 }
 
 .espaciador {
@@ -139,7 +138,14 @@ section .content {
   display: block;
 }
 
-@media (min-width: 850px) {
+@media (max-width: 768px) {
+  section .content {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+
   header .container {
     flex-direction: row;
     justify-content: space-between;
@@ -150,4 +156,5 @@ section .content {
     padding-bottom: 0;
     padding-right: 20px;
   }
+
 } 
