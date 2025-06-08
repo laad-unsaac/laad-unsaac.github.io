@@ -6,6 +6,17 @@
   grid-gap: 190px; /* Reducir el espacio entre las columnas */
 }
 
+.box-head titulo {
+  font-size: 2.5cm;
+  padding: 0;
+  text-align: center;
+} 
+
+.box-head p {
+  max-width: 700px;
+  line-height: 2;
+}
+
 .box1 p {
   max-width: 700px;
   line-height: 2;
@@ -50,6 +61,10 @@
         margin-top: -100px;
     }
 
+    .box-head {
+      margin: 10rem 0 0 0;
+    }
+
     .box1 img {
         display: flex;
         justify-content: center;
@@ -58,6 +73,9 @@
         width: 100%;
         height: 100%;
     }
+    .box1 titulo {
+    padding: 3rem 0 0 0;
+} 
 }
 
 /* CSS HEX */
