@@ -25,13 +25,22 @@
 }
 
 /* Diseño responsivo: apilados verticalmente en pantallas pequeñas */
-@media screen and (max-width: 750px) {
+@media (max-width: 768px) {
   .contenedor {
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .contact-title > h1{
+    line-height: 1;
+    margin-top: 20rem;
   }
 
   .box_a, .box_b {
     width: 100%;
   }
+
 }
+
