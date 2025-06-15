@@ -1,0 +1,92 @@
+
+.button {
+
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px  #A13F36;
+    color: #A13F36 !important;
+
+    appearance: none; /* Mantener porque es fundamental para eliminar estilos nativos. */
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; /* La versión estándar es ampliamente soportada. */
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 2rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.button:hover {
+  background-color: #A13F36; /* Cambia el color de fondo al pasar el mouse */
+  color: white !important; /* Cambia el color del texto a blanco */
+}
+
+.button.small {
+    font-size: 1.5rem;
+    height: 4.5rem;
+    line-height: 2.5rem;
+    padding: 1rem 2.5rem;
+}
+
+.sources-container > ul {
+    list-style: disc;
+    color:  #A13F36;
+}
+
+.sources-container > li {
+    margin: 1rem 0rem;
+}
+
+
+.sources-container > h3 {
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 4.5rem;
+}
+
+.sources-container  h4 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 2.5rem 0rem 1rem;
+}
+
+/* Estilo para los enlaces dentro de elementos <li>, excluyendo los que son botones */
+.sources-container ul li a:not(.button):hover {
+  color: black; /* Puedes cambiar este color al que prefieras, por ejemplo, un rojo más oscuro */
+  background-color: #A13F36;
+}
+
+/* Estilo para los enlaces dentro de h4 en el contenedor de fuentes */
+.sources-container h4 a {
+  color: blue;
+}
+
+/* Estilo para los enlaces dentro de h4 en el contenedor de fuentes */
+.sources-container h4 a:hover {
+  color: black; /* Un color de ejemplo, como un azul brillante. Puedes elegir el que mejor se adapte a tu diseño. */
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+
+    .sources-container { 
+        padding: 0.5rem;
+    }
+    .sources-content {
+        flex: 100%;
+    }
+
+    .sources-title > h1{
+        line-height: 1;
+        margin-top: 20rem;
+    }
+    
+}

@@ -79,7 +79,7 @@ header nav label:hover {
 
 
 #inicio:checked ~ nav label.inicio,
-#eventos:checked ~ nav label.eventos,
+#sources:checked ~ nav label.sources,
 #proyectos:checked ~ nav label.proyectos,
 #reconocimientos:checked ~ nav label.reconocimientos,
 #miembros:checked ~ nav label.miembros,
@@ -128,8 +128,9 @@ section .content {
   width: 100%;
 }
 
+/* seccion para conectar ids con secciones */
 #inicio:checked ~ section .content-1,
-#eventos:checked ~ section .content-2,
+#sources:checked ~ section .content-2,
 #proyectos:checked ~ section .content-3,
 #reconocimientos:checked ~ section .content-4,
 #publicaciones:checked ~ section .content-5,
