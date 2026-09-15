@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&nbsp;</title>
+    <meta name="description" content="Catálogo completo de publicaciones científicas e investigativas del LAAD UNSAAC. Filtros interactivos por área y buscador.">
+    <link rel="icon" type="image/png" href="assets/logo-graph-only.png">
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <img src="assets/logo-graph-only.png" alt="LAAD UNSAAC Logo" class="logo-img">
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+                    <li><a href="publicaciones.html" class="nav-link active">Publicaciones</a></li>
+                    <li><a href="premios.html" class="nav-link">Premios</a></li>
+                    <li><a href="plantillas.html" class="nav-link">Recursos</a></li>
+                    <li><a href="equipo.html" class="nav-link">Equipo</a></li>
+                    <li><a href="oportunidades.html" class="nav-link nav-highlight">Oportunidades</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <!-- Page Banner Header -->
+        <section class="page-banner">
+            <div class="container">
+                <h1 class="page-title">Publicaciones Científicas</h1>
+                <p class="page-lead">Catálogo completo de artículos publicados en conferencias y revistas indizadas.</p>
+            </div>
+        </section>
+
+        <!-- Publications Catalog Section -->
+        <section class="section">
+            <div class="container">
+
+                <!-- Controls Bar: Search & Filter -->
+                <div class="publications-controls">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="pub-search" placeholder="Buscar por título, autor o palabras clave..." aria-label="Buscar publicaciones">
+                    </div>
+                    <div class="filter-pills" id="pub-filters">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="clustering">Clustering</button>
+                        <button class="filter-btn" data-filter="nlp">NLP & Texto</button>
+                        <button class="filter-btn" data-filter="vision">Visión & Tráfico</button>
+                        <button class="filter-btn" data-filter="parallel">Computación Paralela</button>
+                    </div>
+                </div>
+
+                <!-- Publications List Container -->
+                <div class="publications-list" id="pub-container">
+
+                    <!-- Pub 1 (2026) -->
+                    <article class="pub-card" data-category="">
+                        <div class="pub-number">01</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Bases de Datos NoSQL</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2026</span>
+                            </div>
+                            <h2 class="pub-title">Qolqa: A Metrics-Driven Design Tool for Document-Oriented NoSQL Databases</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Anghelo Alagon-Fernandez, Yerson Joab Chirinos-Vilca, Maristela Holanda, Harley Vera-Olivera</div>
+                            <div class="pub-abstract" id="abstract-1">
+                                <p>Qolqa, herramienta web para el diseño de esquemas en bases de datos NoSQL orientadas a documentos que incorpora métricas de evaluación de calidad, integra las consultas como componente central del proceso de diseño y soporta múltiples esquemas dentro de una misma solución. A diferencia de herramientas existentes —que dependen fuertemente de la experiencia del diseñador y carecen de métricas objetivas—, Qolqa busca facilitar la toma de decisiones y mejorar la calidad de los esquemas independientemente del nivel de experiencia. Construida sobre la métrica propuesta en trabajos previos del laboratorio. Presentado en el XLI Simpósio Brasileiro de Banco de Dados (SBBD 2026), São Carlos/SP, Brasil.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-1', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://sol.sbc.org.br/index.php/sbbd_estendido/article/view/44129" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> SBC Open Lib
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 2 (2026) -->
+                    <article class="pub-card" data-category="vision">
+                        <div class="pub-number">02</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Computer Vision & Patrimonio Cultural</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2026</span>
+                            </div>
+                            <h2 class="pub-title">CHINTEXDB-PERU28: A unique dataset of traditional textile iconographies from Chinchero, Peru for cultural preservation and image recognition</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Gabriela Farfan Enriquez, Ruben Ancco Peralta, Edwin Jonathan Escobedo Cárdenas, Hernan Nina Hanco, Lauro Enciso-Rodas, Carlos Fernando Montoya Cubas</div>
+                            <div class="pub-abstract" id="abstract-2">
+                                <p>Dataset CHINTEXDB-PERU28: 1,358 imágenes de alta resolución de 28 iconografías textiles tradicionales del distrito de Chinchero (Cusco), recopiladas en trabajo de campo en centros textiles y ferias dominicales, y anotadas manualmente en la plataforma Roboflow. Publicado en acceso abierto en Data in Brief, busca habilitar investigación en clasificación de imágenes, reconocimiento de patrones y preservación mediante IA del patrimonio cultural textil andino, además de documentar iconografías en riesgo de desaparecer.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-2', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://www.sciencedirect.com/science/article/pii/S2352340926003872?via%3Dihub" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> ScienceDirect
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 3 (2026) -->
+                    <article class="pub-card" data-category="nlp">
+                        <div class="pub-number">03</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">NLP & Knowledge Graphs</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2026</span>
+                            </div>
+                            <h2 class="pub-title">Semantic Similarity Analysis of Theses Using Sentence Embeddings and Knowledge Graphs</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Ibeth J. del Pilar Cusi, Lizeth C. Mamani, Gabriela Zuñiga-Rojas, Edwin Alvarez-Mamani, Harley Vera-Olivera</div>
+                            <div class="pub-abstract" id="abstract-3">
+                                <p>Construcción de un Knowledge Graph (KG) a partir de 7,739 tesis de pregrado de la UNSAAC, escritas en español y subrepresentadas en bases de datos académicas como Scopus o Web of Science. Los documentos se representaron mediante embeddings vectoriales de modelos de lenguaje preentrenados, calculando la similitud semántica por distancia coseno y modelando el grafo resultante en Neo4j, enriquecido con metadatos institucionales (facultad y programa académico) para identificar comunidades temáticas. Presentado en SIMBig 2025.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-3', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://link.springer.com/chapter/10.1007/978-3-032-20322-9_7" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> Springer Link
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 4 (2026) -->
+                    <article class="pub-card" data-category="">
+                        <div class="pub-number">04</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Machine Learning & Predictive Analytics</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2026</span>
+                            </div>
+                            <h2 class="pub-title">Predictive Airfare Analysis Based on Machine Learning Models</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Yasumy Maricely Jallo-Paccaya, Jadyra Ch'aska Choque-Quispe, Thalia Quispe-Mamani, Rebeca Araceli Ccansaya-Soncco, Edwin Alvarez-Mamani, Harley Vera-Olivera</div>
+                            <div class="pub-abstract" id="abstract-4">
+                                <p>Solución predictiva integral para el mercado aéreo peruano (LATAM Airlines) que aborda cuatro objetivos: predecir tarifas, estimar el periodo óptimo de compra anticipada, identificar el rango horario más favorable de búsqueda, y predecir conjuntamente estas variables mediante un modelo multioutput. El pipeline incluyó web scraping automatizado con Selenium, preprocesamiento con codificación One-hot y basada en embeddings, y comparación de algoritmos clásicos (XGBoost, Random Forest, Decision Tree, KNN) frente a modelos de deep learning (LSTM, GRU, TCN, Transformers), con optimización de hiperparámetros vía Optuna. Presentado en SIMBig 2025.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-4', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://link.springer.com/chapter/10.1007/978-3-032-20322-9_31" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> Springer Link
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 5 (2026) -->
+                    <article class="pub-card" data-category="vision">
+                        <div class="pub-number">05</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Computer Vision & Industria Textil</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2026</span>
+                            </div>
+                            <h2 class="pub-title">Impurity Detection System for Quality Control in Alpaca Fiber Using Computer Vision</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Carlos Fernando Montoya Cubas, Milton Amed Achahui Cruz, Johana Maria Mamani Meza, Fran Anthony Hancco Champi, José Mauricio Díaz Jurado, Jhordan Berrocal Cueto, Harley Vera-Olivera</div>
+                            <div class="pub-abstract" id="abstract-5">
+                                <p>Sistema automático de detección de impurezas (tierra y paja) en fibra de alpaca mediante visión por computadora y deep learning, construido sobre un dataset propio de 1,524 imágenes anotadas. Comparación de los modelos YOLOv8 y YOLOv11 bajo transfer learning: YOLOv11 alcanzó 90.4% de precisión en detección de paja y 87.5% en detección de tierra, mientras que YOLOv8 obtuvo mayor recall (87.4%) en la detección de paja. Publicado en LACAR 2025 (Latin American Congress on Automation and Robotics), con acceso a los servidores del LAAD-UNSAAC para el entrenamiento de los modelos.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-5', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://link.springer.com/chapter/10.1007/978-3-032-18982-0_39" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> Springer Link
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 6 (2024) -->
+                    <article class="pub-card" data-category="">
+                        <div class="pub-number">06</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Bases de Datos NoSQL</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2024</span>
+                            </div>
+                            <h2 class="pub-title">Métricas para Análise de Esquemas em Banco de Dados NoSQL Orientado a Documentos</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Harley Vera-Olivera, Maristela Holanda</div>
+                            <div class="pub-abstract" id="abstract-6">
+                                <p>Propuesta de una métrica para evaluar esquemas en bases de datos NoSQL orientadas a documentos, considerando simultáneamente consultas y esquemas (a diferencia de trabajos previos que abordan solo uno de los dos aspectos). Incorpora relaciones y atributos con coeficientes de ponderación propios, permitiendo identificar esquemas complejos —a los que asigna puntuaciones más altas— frente a esquemas más simples. Presentado en el XXXIX Simpósio Brasileiro de Banco de Dados (SBBD 2024), Florianópolis, Brasil.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-6', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://sol.sbc.org.br/index.php/sbbd/article/view/30707" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> SBC Open Lib
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 7 (2024) -->
+                    <article class="pub-card" data-category="clustering parallel">
+                        <div class="pub-number">07</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Bio-Inspired & Computación Paralela</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2024</span>
+                            </div>
+                            <h2 class="pub-title">Parallel-EvoCluster: An Open-Source Parallel Nature-Inspired Optimization Clustering</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Edwin Alvarez-Mamani, Milagros Yarahuaman-Rojas, Raul Huillca-Huallparimachi</div>
+                            <div class="pub-abstract" id="abstract-7">
+                                <p>Parallel-EvoCluster, framework de código abierto que paraleliza diez algoritmos bio-inspirados de clustering (PSO, Salp Swarm, Firefly, Grey Wolf, Whale, Multi-Verse, Moth-Flame, Bat, Cuckoo Search, entre otros) mediante dos enfoques: memoria compartida (OpenMP) y memoria distribuida (MPI), usando 24 núcleos de CPU. Los resultados muestran mejoras significativas de tiempo de ejecución frente a las versiones seriales: en promedio 10.14x más rápido con MPI y 9.05x con OMP. Código disponible en GitHub. Presentado en SIMBig 2023.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-7', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://link.springer.com/chapter/10.1007/978-3-031-63616-5_1" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> Springer Link
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 8 (2024) -->
+                    <article class="pub-card" data-category="">
+                        <div class="pub-number">08</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Deep Learning & Transporte Inteligente</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2024</span>
+                            </div>
+                            <h2 class="pub-title">Multivariable-Unistep Prediction of Travel Times in Public Transport Buses Using LSTM and Convolutional LSTM</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Elizon F. Carcausto-Mamani, Etson R. Rojas-Cahuana, Edwin Alvarez-Mamani, Harley Vera-Olivera</div>
+                            <div class="pub-abstract" id="abstract-8">
+                                <p>Predicción del tiempo de viaje entre paraderos del transporte público de Cusco mediante arquitecturas LSTM y Convolutional LSTM en un esquema Encoder-Decoder multivariable-unistep. Se utilizó un dataset de 1.6 millones de registros de rutas de buses (puntos GPS y paraderos), logrando un modelo capaz de predecir el tiempo de viaje considerando el contexto espaciotemporal con un MAE de 19.55 segundos. Código disponible en GitHub. Presentado en SIMBig 2023.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-8', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://link.springer.com/chapter/10.1007/978-3-031-63616-5_4" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> Springer Link
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 9 (2024) -->
+                    <article class="pub-card" data-category="nlp">
+                        <div class="pub-number">09</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">NLP & LLMs</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2024</span>
+                            </div>
+                            <h2 class="pub-title">Identification of climate change and sustainability texts using pre-trained Spanish language models</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Gerardo Huerta, Gabriela Zuñiga-Rojas</div>
+                            <div class="pub-abstract" id="abstract-9">
+                                <p>Clasificación avanzada de textos sobre cambio climático utilizando modelos de lenguaje en español preentrenados (BETO / RoBERTa). Presentado en NAACL 2024 (LatinX in AI Workshop) y premiado como **Best Paper**.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-9', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://research.latinxinai.org/papers/naacl/2024/pdf/Gerardo_Huerta.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-file-pdf"></i> NAACL 2024 PDF
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 10 (2023) -->
+                    <article class="pub-card" data-category="">
+                        <div class="pub-number">10</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Bases de Datos NoSQL</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2023</span>
+                            </div>
+                            <h2 class="pub-title">Análise de Desempenho em Banco de Dados NoSQL Orientado a Documentos: Um Índice para Comparação de Modelos de Dados</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Harley Vera-Olivera, Edwin Alvarez-Mamani, Maristela Holanda</div>
+                            <div class="pub-abstract" id="abstract-10">
+                                <p>Comparación de dos enfoques de modelado de datos en bases de datos NoSQL orientadas a documentos —documentos referenciados y documentos anidados— para establecer un índice general de desempeño de acceso entre ambos. Mediante regresión múltiple, los resultados muestran que, en promedio, en modo replica set el acceso a documentos anidados es 2.20x más rápido con caché activado y 1.74x sin caché; en modo standalone, 1.70x más rápido con caché y 1.24x sin caché. Presentado en el XXXVIII Simpósio Brasileiro de Banco de Dados (SBBD 2023), Belo Horizonte, Brasil.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-10', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://sol.sbc.org.br/index.php/sbbd/article/view/25514" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> SBC Open Lib
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 11 (2022) -->
+                    <article class="pub-card" data-category="vision">
+                        <div class="pub-number">11</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Computer Vision & Datasets</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2022</span>
+                            </div>
+                            <h2 class="pub-title">I see you: A Vehicle-Pedestrian Interaction Dataset from Traffic Surveillance Cameras</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Hanan Quispe, Jorshinno Sumire, Patricia Condori, Edwin Alvarez, Harley Vera</div>
+                            <div class="pub-abstract" id="abstract-11">
+                                <p>Presentación del nuevo dataset 'I see you', compuesto por 170 ocurrencias de cuasi-accidentes capturadas mediante cámaras de tráfico en intersecciones de Cusco usando YOLOv5 y calibración de cámara. Publicado en LXAI @ NeurIPS 2022.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-11', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://arxiv.org/abs/2211.09342" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-file-pdf"></i> arXiv:2211.09342
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 12 (2022) -->
+                    <article class="pub-card" data-category="clustering">
+                        <div class="pub-number">12</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Feature Extraction</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2022</span>
+                            </div>
+                            <h2 class="pub-title">Feature-based Trajectory Anomaly Detection</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Gerar F. Quispe-Torres, Lauro Enciso-Rodas, Germain Garcia-Zanabria, Harley Vera</div>
+                            <div class="pub-abstract" id="abstract-12">
+                                <p>Investigación de técnicas no supervisadas sobre espacio de características para identificar comportamientos anómalos en flujos de vehículos y peatones.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-12', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://www.clei.org/cleiej/index.php/cleiej/article/view/538" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> CLEI EJ
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 13 (2022) -->
+                    <article class="pub-card" data-category="clustering vision">
+                        <div class="pub-number">13</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Intelligent Transportation Systems</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2022</span>
+                            </div>
+                            <h2 class="pub-title">Clustering Analysis for Traffic Jam Detection for Intelligent Transportation System</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Harley Vera-Olivera, José Luis Soncco-Álvarez, Edwin Alvarez-Mamani</div>
+                            <div class="pub-abstract" id="abstract-13">
+                                <p>Aplicación del algoritmo Parallel Social Spider Optimization (P-SSO) para la detección y clasificación de congestión vehicular en tiempo real sobre datos geoespaciales de buses de transporte público en Cusco.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-13', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://link.springer.com/chapter/10.1007/978-3-031-04447-2_5" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> Springer Link
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 14 (2021) -->
+                    <article class="pub-card" data-category="vision nlp">
+                        <div class="pub-number">14</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Anomaly Detection</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2021</span>
+                            </div>
+                            <h2 class="pub-title">Trajectory Anomaly Detection based on Similarity Analysis</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Gerar F. Quispe-Torres, Germain Garcia-Zanabria, Harley Vera-Olivera, Lauro Enciso-Rodas</div>
+                            <div class="pub-abstract" id="abstract-14">
+                                <p>Análisis comparativo empleando transformadas Wavelet y Fourier como descriptores de trayectoria para la detección automática e no supervisada de anomalías en tráfico y videovigilancia.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-14', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/9639966" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> IEEExplore
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 15 (2021) -->
+                    <article class="pub-card" data-category="parallel clustering">
+                        <div class="pub-number">15</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Parallel Computing</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2021</span>
+                            </div>
+                            <h2 class="pub-title">Parallel Social Spider Optimization Algorithms with Island Model for the Clustering Problem</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Edwin Alvarez-Mamani, Lauro Enciso-Rodas, Mauricio Ayala-Rincón, José L. Soncco-Álvarez</div>
+                            <div class="pub-abstract" id="abstract-15">
+                                <p>Modelos de islas paralelas utilizando 24 procesadores concurrentes para acelerar de 15x a 28x veces el algoritmo SSO de agrupación sin perder precisión matemática. Presentado en SIMBig 2020.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-15', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://link.springer.com/chapter/10.1007/978-3-030-76228-5_9" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> Springer Link
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 16 (2020) -->
+                    <article class="pub-card" data-category="clustering nlp">
+                        <div class="pub-number">16</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Clustering Heuristics</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2020</span>
+                            </div>
+                            <h2 class="pub-title">A multi-objective optimization algorithm for center-based clustering</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Jared León, Boris Chullo-Llave, Lauro Enciso-Rodas, José Luis Soncco-Álvarez</div>
+                            <div class="pub-abstract" id="abstract-16">
+                                <p>Algoritmo de optimización multiobjetivo (SSO-C) que minimiza una función ponderada entre K-means y problemas EMAX utilizando búsqueda local aproximada para grandes volúmenes de datos. Galardonado con Best Paper en CLEI 2019.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-16', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://www.sciencedirect.com/science/article/pii/S1571066120300128" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> ScienceDirect
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 17 (2020) -->
+                    <article class="pub-card" data-category="vision nlp">
+                        <div class="pub-number">17</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Hybrid Deep Learning</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2020</span>
+                            </div>
+                            <h2 class="pub-title">Peruvian Sign Language Recognition Using a Hybrid Deep Neural Network</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Yuri Vladimir Huallpa Vargas, Naysha Naydu Diaz Ccasa, Lauro Enciso Rodas</div>
+                            <div class="pub-abstract" id="abstract-17">
+                                <p>Modelo híbrido de Redes Neuronal Convolucional (CNN) y Bidirectional LSTM (BLSTM) con mecanismo de atención para la traducción temporal de la Lengua de Señas Peruana a texto en español.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-17', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://link.springer.com/chapter/10.1007/978-3-030-46140-9_16" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> Springer Link
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 18 (2017) -->
+                    <article class="pub-card" data-category="nlp">
+                        <div class="pub-number">18</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Cloud Computing & Systems</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2017</span>
+                            </div>
+                            <h2 class="pub-title">Software as a service google apps in the internal communication of UNSAAC</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Hernán Nina, Lauro Enciso</div>
+                            <div class="pub-abstract" id="abstract-18">
+                                <p>Estudio sobre la adopción de herramientas SaaS en la comunicación universitaria interna e identificación de factores clave en la infraestructura informática institucional.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-18', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://ieomsociety.org/bogota2017/papers/113.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-file-pdf"></i> PDF Paper
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 19 (2017) -->
+                    <article class="pub-card" data-category="vision">
+                        <div class="pub-number">19</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Deep Learning & Vision</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2017</span>
+                            </div>
+                            <h2 class="pub-title">Application of convolutional neural networks for static hand gestures recognition</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> C. Jose L. Flores, A. E. Gladys Cutipa, R. Lauro Enciso</div>
+                            <div class="pub-abstract" id="abstract-19">
+                                <p>Reconocimiento de 24 gestos estáticos de la Lengua de Señas Peruana (LSP) mediante arquitecturas de Redes Neuronales Convolucionales (CNN) con una precisión de 96.20% frente a variaciones de iluminación y escala.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-19', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://ieeexplore.ieee.org/document/8079727" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-external-link"></i> IEEE Xplore
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pub 20 (2016) -->
+                    <article class="pub-card" data-category="clustering parallel">
+                        <div class="pub-number">20</div>
+                        <div class="pub-content">
+                            <div class="pub-meta">
+                                <span class="pub-category-badge">Clustering & Algoritmos</span>
+                                <span class="pub-year"><i class="fa-solid fa-calendar"></i> 2016</span>
+                            </div>
+                            <h2 class="pub-title">Social spider algorithm approach for clustering</h2>
+                            <div class="pub-authors"><i class="fa-solid fa-user-pen"></i> Harley Vera-Olivera, José Luis Soncco-Álvarez, Lauro Enciso-Rodas</div>
+                            <div class="pub-abstract" id="abstract-20">
+                                <p>Enfoque basado en el algoritmo de optimización de arañas sociales (Social Spider Optimization - SSO) para la agrupación eficiente de datos reduciendo la suma de distancias euclídeas. Evaluado con 5 conjuntos de datos del repositorio UCI ML frente a K-means y Algoritmos Genéticos.</p>
+                            </div>
+                            <div class="pub-actions">
+                                <button class="btn-toggle-abstract" onclick="toggleAbstract('abstract-20', this)">
+                                    <span>Ver resumen completo</span> <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <a href="https://ceur-ws.org/Vol-1743/paper14.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-file-pdf"></i> CEUR-WS PDF
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Common -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <p><strong>Laboratorio de Algoritmos y Análisis de Datos</strong><br>
+                Universidad Nacional de San Antonio Abad del Cusco.</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="publicaciones.html">Publicaciones</a>
+                <a href="premios.html">Premios</a>
+                <a href="plantillas.html">Recursos</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="oportunidades.html">Oportunidades</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 LAAD. Todos los derechos reservados. | Cusco, Perú.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

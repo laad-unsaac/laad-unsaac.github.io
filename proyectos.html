@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&nbsp;</title>
+    <meta name="description" content="Proyectos de investigación científica y tecnológica financiados del LAAD UNSAAC. Movilidad geotemporal, SaminBot COVID-19 y modelos computacionales.">
+    <link rel="icon" type="image/png" href="assets/logo-graph-only.png">
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <img src="assets/logo-graph-only.png" alt="LAAD UNSAAC Logo" class="logo-img">
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="proyectos.html" class="nav-link active">Proyectos</a></li>
+                    <li><a href="publicaciones.html" class="nav-link">Publicaciones</a></li>
+                    <li><a href="premios.html" class="nav-link">Premios</a></li>
+                    <li><a href="plantillas.html" class="nav-link">Recursos</a></li>
+                    <li><a href="equipo.html" class="nav-link">Equipo</a></li>
+                    <li><a href="oportunidades.html" class="nav-link nav-highlight">Oportunidades</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <!-- Page Banner Header -->
+        <section class="page-banner">
+            <div class="container">
+                <h1 class="page-title">Proyectos del Laboratorio</h1>
+                <p class="page-lead">Iniciativas científicas orientadas a resolver problemas regionales y globales con Ciencias de la Computación.</p>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section class="section">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Project 1 (2026 - 2028) -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-badge funding"><i class="fa-solid fa-coins"></i> Fondo S/ 200,000 PEN</span>
+                            <span class="project-date"><i class="fa-regular fa-calendar"></i> 2026 - 2028</span>
+                        </div>
+                        <h2 class="project-title">Plataforma Tecnológica Bidireccional de Traducción Directa de Voz a Voz Quechua–Español para Mejorar la Comunicación Médico-paciente</h2>
+                        <p class="project-description">
+                            Desarrollo de un sistema de traducción directa de voz a voz (Speech-to-Speech / S2ST) bidireccional entre Quechua y Español aplicado al entorno médico. Emplea técnicas de aprendizaje auto-supervisado (SSL) y unidades discretas (mHuBERT, Translatotron 3, Wav2Vec 2.0) sobre datos recolectados en consultas clínicas reales (aplicación Laqla en Ocongate, Cusco) para eliminar las barreras de comunicación médico-paciente en lenguas de bajos recursos.
+                        </p>
+                        <div class="project-footer">
+                            <span class="grant-tag"><i class="fa-solid fa-building-columns"></i> Grant UNSAAC</span>
+                            <span class="tech-tag">NLP • Quechua Healthcare • Speech-to-Speech</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-badge funding"><i class="fa-solid fa-coins"></i> Fondo S/ 496,554 PEN</span>
+                            <span class="project-date"><i class="fa-regular fa-calendar"></i> 2018 - 2022</span>
+                        </div>
+                        <h2 class="project-title">Identificación de áreas de riesgo y patrones de movilidad en parques arqueológicos de Cusco basados en fotos geolocalizadas de Flickr</h2>
+                        <p class="project-description">
+                            El presente trabajo tiene como objetivo determinar las zonas de riesgo y los patrones de movilidad en los parques arqueológicos de la región Cusco. Se analiza información geotemporal extraída mediante la API de Flickr (fecha, hora y geolocalización exacta de cada fotografía) para organizar, procesar y almacenar los patrones de flujo turístico y conservación ambiental.
+                        </p>
+                        <div class="project-footer">
+                            <span class="grant-tag"><i class="fa-solid fa-building-columns"></i> Grant UNSAAC</span>
+                            <span class="tech-tag">Geospatial Analytics • Data Mining</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-badge funding"><i class="fa-solid fa-coins"></i> Fondo S/ 50,000 PEN</span>
+                            <span class="project-date"><i class="fa-regular fa-calendar"></i> 2020 - 2021</span>
+                        </div>
+                        <h2 class="project-title">Desarrollo de un asistente virtual (SaminBot) para la recolección de datos e información en salud, economía y educación por COVID-19</h2>
+                        <p class="project-description">
+                            Creación de un chatbot inteligente llamado <strong>SaminBot</strong> desplegado en plataformas como WhatsApp, Facebook Messenger y web. Capturó 1,586 registros validados por especialistas para facilitar la toma de decisiones rápidas e informadas durante la pandemia en la región Cusco.
+                        </p>
+                        <div class="project-footer">
+                            <span class="grant-tag"><i class="fa-solid fa-building-columns"></i> Grant UNSAAC</span>
+                            <span class="tech-tag">Conversational AI • Healthcare NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Callout Box for New Collaborations -->
+                <div class="cta-box-callout mt-5">
+                    <div class="cta-callout-content">
+                        <h3>¿Tienes una propuesta o buscas financiamiento para tu tesis?</h3>
+                        <p>En el LAAD apoyamos la formulación de proyectos competitivos para obtener fondos universitarios y nacionales.</p>
+                    </div>
+                    <a href="oportunidades.html" class="btn btn-gold btn-lg">
+                        <i class="fa-solid fa-lightbulb"></i> Ver Convocatorias de Tesis
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Common -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <p><strong>Laboratorio de Algoritmos y Análisis de Datos</strong><br>
+                Universidad Nacional de San Antonio Abad del Cusco.</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="publicaciones.html">Publicaciones</a>
+                <a href="premios.html">Premios</a>
+                <a href="plantillas.html">Recursos</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="oportunidades.html">Oportunidades</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 LAAD. Todos los derechos reservados. | Cusco, Perú.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

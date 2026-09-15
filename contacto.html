@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&nbsp;</title>
+    <meta name="description" content="Información de contacto, ubicación física y correo electrónico del LAAD UNSAAC en Cusco, Perú.">
+    <link rel="icon" type="image/png" href="assets/logo-graph-only.png">
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <img src="assets/logo-graph-only.png" alt="LAAD UNSAAC Logo" class="logo-img">
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+                    <li><a href="publicaciones.html" class="nav-link">Publicaciones</a></li>
+                    <li><a href="premios.html" class="nav-link">Premios</a></li>
+                    <li><a href="plantillas.html" class="nav-link">Recursos</a></li>
+                    <li><a href="equipo.html" class="nav-link">Equipo</a></li>
+                    <li><a href="oportunidades.html" class="nav-link nav-highlight">Oportunidades</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <!-- Page Banner Header -->
+        <section class="page-banner">
+            <div class="container">
+                <h1 class="page-title">Contacto y Ubicación</h1>
+                <p class="page-lead">Visítanos en el Campus Perayoc o escríbenos directamente para consultas académicas e institucionales.</p>
+            </div>
+        </section>
+
+        <!-- Contact Details Section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-box-standalone">
+                    <div class="contact-info-standalone">
+                        <h2>Laboratorio de Algoritmos y Análisis de Datos</h2>
+                        <p>Alentamos a estudiantes, investigadores e instituciones públicas o privadas a ponerse en contacto con nosotros para impulsar proyectos de producción científica y tecnológica.</p>
+
+                        <div class="contact-details mt-4">
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <strong>Ubicación Física:</strong>
+                                    <p>Facultad de Ingeniería Eléctrica, Electrónica, Informática y Mecánica<br>
+                                    Escuela Profesional de Ingeniería Informática y de Sistemas (Pabellón 4to Piso)<br>
+                                    Campus Universitario Perayoc, Av. De La Cultura N° 733, Cusco, Perú.</p>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <strong>Correo Electrónico Oficial:</strong>
+                                    <p class="email-row mt-1">
+                                        <a href="mailto:laad@unsaac.edu.pe" id="lab-email">laad@unsaac.edu.pe</a>
+                                        <button type="button" class="btn-copy-email" onclick="copyEmail()" title="Copiar correo">
+                                            <i class="fa-regular fa-copy"></i> Copiar Correo
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-cta">
+                        <div class="cta-inner">
+                            <img src="assets/logo-graph-only.png" alt="LAAD Icon" class="cta-logo">
+                            <h3>UNSAAC</h3>
+                            <p>Universidad Nacional de San Antonio Abad del Cusco</p>
+                            <a href="mailto:laad@unsaac.edu.pe" class="btn btn-primary btn-block">
+                                <i class="fa-paper-plane fa-regular"></i> Enviar Correo Directo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Common -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <p><strong>Laboratorio de Algoritmos y Análisis de Datos</strong><br>
+                Universidad Nacional de San Antonio Abad del Cusco.</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="publicaciones.html">Publicaciones</a>
+                <a href="premios.html">Premios</a>
+                <a href="plantillas.html">Recursos</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="oportunidades.html">Oportunidades</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 LAAD. Todos los derechos reservados. | Cusco, Perú.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Correo copiado al portapapeles</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

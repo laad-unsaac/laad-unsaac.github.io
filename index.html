@@ -1,974 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAAD</title>
-    <link rel="icon" href="Index/imagenes/logo-icono.ico">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="Index/inicio.css">
-    <link rel="stylesheet" href="Index/sources.css">
-    <link rel="stylesheet" href="Index/proyectos.css">
-    <link rel="stylesheet" href="Index/reconocimientos.css">
-    <link rel="stylesheet" href="Index/publicaciones.css">
-    <link rel="stylesheet" href="Index/mienbros.css">
-    <link rel="stylesheet" href="Index/contacto.css">
-    <script src="carrusel.js" defer></script>
-    <script src="menu.js" defer></script>
-    <link rel="stylesheet" href="Index/footer.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>&nbsp;</title>
+    <meta name="description" content="Laboratorio de Algoritmos y Análisis de Datos (LAAD) de la Universidad Nacional de San Antonio Abad del Cusco (UNSAAC). Investigación avanzada en Ciencias de la Computación, Machine Learning, NLP y Optimización.">
+    <link rel="icon" type="image/png" href="assets/logo-graph-only.png">
+    
+    <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <script src="main.js" type="text/javascript"></script>
-    <script src="https://kit.fontawesome.com/61d82801f8.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-        <header>
-            <div class="container">
-                <p class="logo">
-                    <img src="Index/imagenes/logo-v2.png" alt="logo-icono">
-                </p>
-
-                <!-- Nav -->
-                <nav>
-                    <label for="inicio" class="inicio">Home</label>
-                    <label for="publicaciones" class="publicaciones">Publications</label>
-                    <label for="proyectos" class="proyectos">Projects</label>
-                    <label for="reconocimientos" class="reconocimientos">Awards & Honors</label>
-                    <label for="miembros" class="miembros">Members</label>
-                    <label for="contacto" class="contacto">Contacto</label>
-                    <label for="sources" class="sources">Sources</label>
-                    <a href="index.html">EN</a>
-                    <div class="slider"></div>
-                </nav>
-                <!-- End Nav -->
-
-            </div>
-        </header>
-
-        <input type="radio" name="slider" checked id="inicio">
-        <input type="radio" name="slider" id="sources">
-        <input type="radio" name="slider" id="proyectos">
-        <input type="radio" name="slider" id="reconocimientos">
-        <input type="radio" name="slider" id="publicaciones">
-        <input type="radio" name="slider" id="miembros">
-        <input type="radio" name="slider" id="contacto">
-        
-        <section>
-
-            <div class="content content-1">
-                <div class="contenido">
-                    <div class="box-head">
-                        <!-- <titulo>LAAD</titulo> -->
-                        
-                            <img src="Index/imagenes/laad-text-black.png" alt="laad">
-                        
-                        <p>Welcome to the Laboratory of Algorithms and Data Analysis (LAAD) at the National University of San Antonio Abad del Cusco (UNSAAC)!</p>
-                        <p>At LAAD, located in the Professional School of Computer Engineering and Systems, we are dedicated to the research and application of advanced algorithms and data analysis.</p>
-                        <p>Explore our site to discover exciting projects, events, and opportunities to contribute to the advancement of science and technology.</p>
-                        <p>Join us in exploring new frontiers in computer science and data science at LAAD UNSAAC!</p>
-                    </div>
-                    <!-- carimagene -->
-                    <div class="box1">
-                        <img src="Index/imagenes/laad-v3.png" alt="Logo">
-                    </div>
-                </div>
-                
-                <div class="espaciador"></div> <!-- Espaciador para separar contenido: inicio.css -->
-
-                <div class="contenido">
-                    <div class="box1">
-                        
-                        <p>The Data and Algorithms analysis Lab at UNSAAC (in spanish, Laboratorio de Algoritmos y Análisis de Datos - LAAD) is located at the National University of San Antonio Abad del Cusco, Peru as part of the Informatics Professional School.</p>
-                        <p>The members of the laboratory is conformed by both very experienced and also young researchers that work together as a team in a number of ongoing projects in order to solve many local problems with the help of Computer Science. There is a wide range of research areas in which many of our members are currently working on; including Theory of Computation, Data Analysis, Bioinformatics, Combinatorics, etc. (see the Research Areas section).
-                        </p>
-                        <p>Although our main activity is related to Computer Science, we encourage anyone who is interested in making scientific or technological production to contact us and join our team to make great things happen!</p>
-
-                    </div>
-                    <!-- carimagene -->
-                    <div class="box2">
-                        <p>
-                            "Computer science is no more about computers than astronomy is about telescopes."
-                        </p>
-                        <p class="box2">
-                            - Edsger W. Dijkstra
-                        </p>
-                    </div>
-                </div>
-
-            </div> <!-- End content-1 -->
-
-
-            <!-- Begin sources -->
-            <div class="content content-2">
-                <div class="event-container">
-                <div class="sources-title">
-                    <h1>Sources</h1>
-                </div>
-
-                <div class="sources-container">
-                    <h3>Undergraduate thesis templates in Latex</h3>
-                    <ul>
-                        <h4><a href="plan_tesis_template.html">Plantilla de plan de tesis (click to see more)</a></h4>
-                        <li>
-                            The template is constructed based on the <strong><a href="download_files/guia-plan-tesis.pdf" target="_blank">*official guide</a></strong> of the professional School of Computer Science - UNSAAC. <br>
-                            Links:<br/>
-                            <br/>
-                            <a href="download_files/plan-tesis-template-texmaker-v3.rar" target="_blank" class="button small"><i class="fas fa-file-archive"></i><img src="" alt=""> download template.zip</a>
-                            <a href="https://www.overleaf.com/latex/templates/plantilla-de-plan-de-tesis-unsaac/hxzsnwhbzsgn" target="_blank" class="button small"><i class="fas fa-leaf"></i><img src="" alt=""> Go to overleaf</a>
-                            <a href="https://youtu.be/uWE_y4oNk3s" target="_blank" class="button small"><i class="fab fa-youtube"></i><img src="" alt=""> YouTube video</a>
-                        </li>
-                        <br/>
-                        <h4><a href="tesis_template.html">Plantilla de tesis (click to see more)</a></h4>
-                        <li>
-                            The code is constructed based on a template and consulting the book: "Thesis Projects, <i> A Guide for Students in Computer Science and Information Systems </i> by M. Berndtsson and B. Olsson, second edition." <br>
-                            Links:<br/>
-                            <br/>
-                            <a href="download_files/tesis-template-texmaker-v2.rar" target="_blank" class="button small"><i class="fas fa-file-archive"></i><img src="" alt=""> download template.zip</a>
-                            <a href="https://www.overleaf.com/latex/templates/plantilla-tesis-unsaac/sxqvmqgzsbsw" target="_blank" class="button small"><i class="fas fa-leaf"></i><img src="" alt=""> Go to overleaf</a>
-                            <a href="https://youtu.be/uWE_y4oNk3s" target="_blank" class="button small"><i class="fab fa-youtube"></i><img src="" alt=""> YouTube video</a>
-                        </li>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-                    </ul>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-                </div>
-                </div>
+    <!-- Header / Navbar Common -->
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <img src="assets/logo-graph-only.png" alt="LAAD UNSAAC Logo" class="logo-img">
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+                    <li><a href="publicaciones.html" class="nav-link">Publicaciones</a></li>
+                    <li><a href="premios.html" class="nav-link">Premios</a></li>
+                    <li><a href="plantillas.html" class="nav-link">Recursos</a></li>
+                    <li><a href="equipo.html" class="nav-link">Equipo</a></li>
+                    <li><a href="oportunidades.html" class="nav-link nav-highlight">Oportunidades</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-            <!-- End sources -->
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-bg-grid"></div>
+            <div class="hero-bg-glow"></div>
+            
+            <div class="container hero-container">
+
+                <h1 class="hero-title">
+                    Laboratorio de <span class="text-gradient">Algoritmos</span> y <br>
+                    <span class="text-highlight">Análisis de Datos</span> <span class="text-gradient">( LAAD )</span>
+                </h1>
 
 
-            <div class="content content-3">
-                <div class="project-container">
-                    <h1>Projects</h1>
-                    <div class="project">
-                        <div class="project-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-diagram-project"></i>
-                            </div>
-                        </div>
-                        <div class="project-right">
-                            <h3 class="project-title">Identification of risk areas and mobility patterns in archaeological parks in the Cusco region based on geolocated photos from Flickr.</h3>
-                            <p class="project-description">Description: The present work aims to determine risk areas and mobility patterns in the archaeological parks of the Cusco region. To achieve this objective, we will analyze data associated with photographs shared on the Flickr social network, including the date, time, and precise geolocation of each photo. The process begins with collecting data through the Flickr API, followed by organizing, processing, and storing it in a…</p>
-                            <p class="project-grant">Grant: Universidad Nacional de San Antonio Abad del Cusco</p>
-                            <p class="project-date">Date: 2018-2022</p>
-                            <p class="project-funding">Total funding amount: PEN 496,554</p>
-                        </div>
-                    </div> 
-                    <div class="project">
-                        <div class="project-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-diagram-project"></i>
-                            </div>
-                        </div>
-                        <div class="project-right">
-                            <h3 class="project-title">Development of a virtual assistant to provide information and collect data in the areas of health, education, and economy as a mitigation measure for COVID-19</h3>
-                            <p class="project-description">Description: The lack of a database to make decisions on quick actions during the pandemic caused by COVID-19 showed the need to use new technologies to speed up the process of capturing decentralized information. This article presents a virtual assistant (chatbot) called SaminBot as an alternative to collect data and provide information during the COVID-19 pandemic. Applied in the Cusco region of Peru, this chatbot facilitated conversations on health, economy, and education from January to August 2020. SaminBot begins data collection based on the user's area of interest, obtains demographic information of it and guides you through questions with the intention of providing useful information according to your personal situation. Specialists validated the questionnaires within their respective fields. We began the data collection process in January and concluded it in June 2021. We utilized the WhatsApp and Facebook Messenger platforms as well as the website, resulting in the acquisition of 1586 records.</p>
-                            <p class="project-grant">Grant: Universidad Nacional de San Antonio Abad del Cusco</p>
-                            <p class="project-date">Date: 2020-2021</p>
-                            <p class="project-funding">Total funding amount: PEN 50,000</p>
-                        </div>
-                    </div>
-               </div>
-            </div>
-
-
-            <!-- Awards Section -->
-            <div class="content content-4">
-                <div class="award-title">
-                    <h1>Awards & Honors</h1>
+                <!-- Dijkstra Quote Card -->
+                <div class="hero-quote-card">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="quote-text">"La ciencia de la computación no trata sobre las computadoras más de lo que la astronomía trata sobre los telescopios."</p>
+                    <div class="quote-author">— Edsger W. Dijkstra</div>
                 </div>
-                <div class="awards-container">
-                    <p>Here, you'll find our awards listed in reverse chronological order. If you have any questions or would like to discuss a specific publication, feel free to contact us.</p>
 
-                    <hr \>
-                    <div class="award">
-                        <div class="award-year">
-                            <h2>2024</h2>
-                        </div>
-                        <div class='award-content'>
-                            <h4>Identification of climate change and sustainability texts using pre-trained Spanish language models</h4>
-                            <p>GH Robles, G Zuñiga-Rojas.</p>
-                            <p>Best Paper at LatinX in AI workshop.</p>
-                            <p>2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics.</p>
-                            
-                            <a class='award-content' 
-                                target="_blank" rel="noopener noreferrer"
-                                href='https://research.latinxinai.org/papers/naacl/2024/pdf/Gerardo_Huerta.pdf'>
-                                <p>conference paper</p>
-                            </a>
-                        </div>
-                        <div class='award-img'>
-                            <img src='./img-award/gabi-certificadov2.jpg' alt='NAACL'/>
-                        </div>
-                    </div>
-
-                    <hr \>
-                    <div class="award">
-                        <div class="award-year">
-                            <h2>2023</h2>
-                        </div>
-                        <div class='award-content'>
-                            <h4>Multivariable-Unistep Prediction of Travel Times in Public Transport Buses Using LSTM and Convolutional LSTM</h4>
-                            <p>Elizon F. Carcausto-Mamani, Etson R. Rojas-Cahuana, Edwin Alvarez-Mamani & Harley Vera-Olivera.</p>
-                            <p>In SIMBig 2023.</p>
-                            
-                            <a class='award-content' 
-                                target="_blank" rel="noopener noreferrer"
-                                href='https://link.springer.com/chapter/10.1007/978-3-031-63616-5_4'>
-                                <p>conference paper</p>
-                            </a>
-                        </div>
-                        <div class='award-img'>
-                            <img src='./img-award/simbig_21_.jpg' alt='Transit Network Analysis'/>
-                        </div>
-                    </div>
-
-                    <hr \>
-                    <div class="award">
-                        <div class="award-year">
-                            <h2>2022</h2>
-                        </div>
-                        <div class='award-content'>
-                            <h4>I see you: A Vehicle-Pedestrian Interaction Dataset from Traffic Surveillance Cameras</h4>
-                            <p>Hanan Quispe, Jorshinno Sumire, Patricia Condori, Edwin Alvarez, Harley Vera.</p>
-                            <p>At LXAI workshop at NeurIPS 2022.</p>
-                            <a class='award-content' 
-                                target="_blank" rel="noopener noreferrer"
-                                href='https://arxiv.org/abs/2211.09342'>
-                                <p>Arxiv - cs</p>
-                            </a>
-                        </div>
-                        <div class='award-img'>
-                            <img src='./img-award/best_h.png' alt='LXAI' />
-                        </div>
-                    </div>
-
-
-                    <hr \>
-                    <div class="award">
-                        <div class="award-year">
-                            <h2>2021</h2>
-                        </div>
-                        <div class='award-content'>
-                            <h4>Trajectory anomaly detection based on similarity analysis</h4>
-                            <p>GF Quispe-Torres, G Garcia-Zanabria, H Vera-Olivera, L Enciso-Rodas.</p>
-                            <p>Best Paper at 2021 XLVII Latin American Computing Conference (CLEI), 1-10.</p>
-                            <a class='award-content' 
-                                target="_blank" rel="noopener noreferrer"
-                                href='https://ieeexplore.ieee.org/abstract/document/9639966'>
-                                <p>IEEExplore</p>
-                            </a>
-                        </div>
-                        <div class='award-img'>
-                            <img src='./img-award/award-clei2021.png' alt='Transit Network Analysis' />
-                        </div>
-                    </div>
-
-                    <hr \>
-                    <div class="award">
-                        <div class="award-year">
-                            <h2>2020</h2>
-                        </div>
-                        <div class='award-content'>
-                            <h4>Parallel Social Spider Optimization Algorithms with Island Model for the Clustering Problem</h4>
-                            <p>Edwin Alvarez-Mamani, Lauro Enciso-Rodas, Mauricio Ayala-Rincón & José L. Soncco-Álvarez .</p>
-                            <p>At SIMBig 2020</p>
-                            <a class='award-content' 
-                                target="_blank" rel="noopener noreferrer"
-                                href='https://link.springer.com/chapter/10.1007/978-3-030-76228-5_9'>
-                                <p>Conference Paper</p>
-                            </a>
-                        </div>
-                        <div class='award-img'>
-                            <img src='./img-award/award-simbig20.jpg' alt='SIMBig 2020' />
-                        </div>
-                    </div>
-
-                    <hr \>
-                    <div class="award">
-                        <div class="award-year">
-                            <h2>2019</h2>
-                        </div>
-                        <div class='award-content'>
-                            <h4>A multi-objective optimization algorithm for center-based clustering</h4>
-                            <p>Jared León, Boris Chullo-Llave, Lauro Enciso-Rodas and José Luis Soncco-Álvarez.</p>
-                            <p>Best Paper At CLEI 2019 </p>
-                            <a class='award-content' 
-                                target="_blank" rel="noopener noreferrer"
-                                href='https://www.sciencedirect.com/science/article/pii/S1571066120300128'>
-                                <p>Electronic Notes in Theoretical Computer Science</p>
-                            </a>
-                        </div>
-                        <div class='award-img'>
-                            <img src='./img-award/award-jared-clei2019.png' alt='CLEI 2019' />
-                        </div>
-                    </div>
-
-
+                <div class="hero-cta-group">
+                    <a href="publicaciones.html" class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-book-bookmark"></i> Ver Publicaciones
+                    </a>
+                    <a href="oportunidades.html" class="btn btn-gold btn-lg">
+                        <i class="fa-solid fa-bullhorn"></i> Ver Oportunidades
+                    </a>
                 </div>
-            </div>
-            <!-- Fin Awards Section -->
 
-            <div class="content content-5">
-                <div class="article-container">
-                    <h1>Publications</h1>
-                    <div class="article">
-                        <div class="article-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </div>
-                        </div>
-                        <div class="article-right">
-                            <h3 class="article-title">1. "Social spider algorithm approach for clustering"</h3>
-                            <p class="article-autors">Autors: Harley Vera-Olivera, José Luis Soncco-Álvarez, Lauro Enciso-Rodas </p>
-                            <div class="article-description">
-                                <input id="ch" type="checkbox">
-                                <div class="description-title"> 
-                                    <p>Abstract:</p> 
-                                </div>
-                                <p>Clustering is a popular data analysis technique to identify homogeneous groups of
-                                objects based on the values of their attributes, used in many disciplines and
-                                applications. This extended abstract of
-                                our undergraduate thesis for obtaining the
-                                engineer degree in informatics and systems, presents an approach</p>
-                                    
-                                <div class="read-more-text">
-                                    
-                                    <p> based on the
-                                        Social Spider Optimization(SSO) algorithm for optimizing clusters of data, taking as metric       the sum of euclidean distances. Other important algorithms of the
-                                    literature were implemented in order to
-                                    make comparisons: K-means algorithm,
-                                    and a Genetic Algorithm (GA) for Clustering. Experiments were performed using 5 datasets taken from the UCI Machine Learning Repository, each algorithm
-                                    was executed many times and then the following measures were calculated: mean,
-                                    median, minimum, and maximum values
-                                    of the results. These experiments showed
-                                    that the SSO algorithm outperforms the
-                                    K- means algorithm, and it has results
-                                    equally competitive as the GA. All these
-                                    results were confirmed by statistical tests
-                                    performed over the outputs of the algorithm.</p>
-                                    <label for="ch">Read less...</label>
-                                </div>
-                                <label for="ch">Read More ...</label>
-                                <a href="https://ceur-ws.org/Vol-1743/paper14.pdf" target="_blank"> <u>link to pdf or webpage</u></a>
-                            </div>
-                        </div>
+                <!-- Stats Counter Row -->
+                <div class="hero-stats-row">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="11">0</div>
+                        <div class="stat-label">Publicaciones de Impacto</div>
                     </div>
-                    <div class="article">
-                        <div class="article-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </div>
-                        </div>
-                        <div class="article-right">
-                            <h3 class="article-title">2. "Trajectory Anomaly Detection based on Similarity Analysis"</h3>
-                            <p class="article-autors">Autors: Gerar F. Quispe-Torres, Germain Garcia-Zanabria, Harley Vera-Olivera & Lauro Enciso-Rodas</p>
-                            <div class="article-description">
-                                <input id="ch2" type="checkbox">
-                                <div class="description-title">
-                                   <p> Abstract: </p> 
-                                </div>
-                                <p>Automatic trajectory processing has multiple applications, mainly due to the wide availability of the data. Trajectory data have a significant practical value, making possible the modeling of various problems such as surveillance and tracking devices, detect anomaly trajectories, identifying illegal and 
-                                </p>   
-                                <div class="read-more-text">
-                                <p>adverse activity. In this study, we show a comparative analysis of the performance of two descriptors to detect anomaly trajectories. We define Wavelet and Fourier transforms as trajectory descriptors to generate characteristics and subsequently detect anomalies. The experiments emphasize performance in the description in the coefficient feature space. For that, we used unsupervised learning, specifically clustering techniques, to generate subsets and identify which are irregular. The implications of the study demonstrate that it is possible to use descriptors in trajectories for automatic anomaly detection and the use of unsupervised learning methods that automatically segment the required information. The performance and comparative analysis of our study are demonstrated through experiments and a case study considering synthetic and real data sets that leave evidence of our contribution.</p>
-                                <label for="ch2">Read Less...</label>
-                            </div>
-                            </div>
-                            <label for="ch2">Read More...</label>
-                            <a href="https://ieeexplore.ieee.org/document/9639966" target="_blank"><u>link to pdf or webpage</u></a>
-                        </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="6">0</div>
+                        <div class="stat-label">Premios Best Paper</div>
                     </div>
-                    <div class="article">
-                        <div class="article-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </div>
-                        </div>
-                        <div class="article-right">
-                            <h3 class="article-title">3. "Clustering Analysis for Traffic Jam Detection for Intelligent Transportation System"</h3>
-                            <p class="article-autors">Autors: Harley Vera-Olivera, José Luis Soncco-Álvarez and Edwin Alvarez-Mamani </p>
-                            <div class="article-description">
-                                <input id="ch3" type="checkbox">
-                                <div class="description-title">
-                                    <p>Abstract: </p>
-                                </div>
-                                <p>
-                                    The growth of cities and the mobility of their inhabitants often generate traffic jams. In order to diminish this problem, cities began to implement Intelligent Transportation Systems (ITS), such as real-time control and monitoring of public transportation buses, smart traffic lights, mobile </p>
-                                    <div class="read-more-text">
-                                    <p>  applications to inform passengers. ITS are a reliable source of data collection for further analysis. This research aims to perform a clustering analysis to detect traffic jams, for which the Parallel Social Spider Optimization (P-SSO) algorithm was used. The choice of the P-SSO algorithm was made based on the previous results where the P-SSO algorithm was compared with the K-means and Social Spider Optimization (SSO) algorithms to solve clustering problems. On the first stage of this research, the P-SSO algorithm was used to define traffic jam states. In the second stage, the P-SSO algorithm was used to detect traffic jam areas based on the geospatial data generated by public transport buses in Cusco-Perú. This clustering analysis was performed on the main streets of the city between June and August 2019. Further, an application was developed that allows to check graphically the clusters obtained.</p>
-                                    <label for="ch3">Read Less...</label>
-                                </div>
-                                <label for="ch3">Read More...</label>
-                            </div>
-                            <a href="https://link.springer.com/chapter/10.1007/978-3-031-04447-2_5" target="_blank"><u>link to pdf or webpage</u></a>
-                        </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="746">0</div>
+                        <div class="stat-label">Mil Soles en Fondos (PEN)</div>
                     </div>
-                    <div class="article">
-                        <div class="article-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </div>
-                        </div>
-                        <div class="article-right">
-                            <h3 class="article-title">4. "I see you: A Vehicle-Pedestrian Interaction Dataset from Traffic Surveillance Cameras"</h3>
-                            <p class="article-autors">Autors: Hanan Quispe, Jorshinno Sumire, Patricia Condori, Edwin Alvarez, Harley Vera </p>
-                            <div class="article-description">
-                                <input type="checkbox" id="ch4">
-                                <div class="description-title">Abstract: </div>
-                                <p>The development of autonomous vehicles arises new challenges in urban traffic scenarios where vehicle-pedestrian interactions are frequent e.g. vehicle yields to pedestrians, pedestrian slows down due approaching to the vehicle. Over the last years, several datasets have been developed to model these </p>
-                                <div class="read-more-text">
-                                    <p>interactions. However, available datasets do not cover near-accident scenarios that our dataset covers. We introduce I see you, a new vehicle-pedestrian interaction dataset that tackles the lack of trajectory data in near-accident scenarios using YOLOv5 and camera calibration methods. I see you consist of 170 near-accident occurrences in seven intersections in Cusco-Peru. This new dataset and pipeline code are available on GitHub.</p>
-                                    <label for="ch4">Read Less...</label>
-                                </div>
-                                <label for="ch4">Read More...</label>
-                            </div>
-                            <a href="source/I_see_you_A_Vehicle-Pedestrian_Interaction_Dataset.pdf" target="_blank"><u>link to pdf or webpage</u></a>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </div>
-                        </div>
-                        <div class="article-right">
-                            <h3 class="article-title">5. "Feature-based Trajectory Anomaly Detection"</h3>
-                            <p class="article-autors">Autors: Gerar F. Quispe-Torres, Lauro Enciso-Rodas, Germain Garcia-Zanabria, Harley Vera </p>
-                            <div class="article-description">
-                                <input type="checkbox" id="ch5">
-                                <div class="description-title">Abstract: </div>
-                                <p>The high availability of trajectory data in different fields makes it attractive to analyze and enhance its multiple practical applications. In particular, trajectory anomaly detection has a significant practical value, making it possible identifying trajectories that may indicate illegal and adverse activity  </p>
-                                <div class="read-more-text">
-                                    <p>in diverse areas such as surveillance, tracking devices, traffic, and people flow. This study presents a methodology to detect anomaly trajectories based on their morphology features. For that, we follow two stages: (1) comparative analysis of the performance of two descriptors to group similar trajectories, and (2) trajectory anomaly detection based on their similarities. We define Wavelet and Fourier transforms as trajectory descriptors to generate characteristics and subsequently detect anomalies. Our experiments emphasize the measure of the performance in the description of the coefficient feature space using unsupervised learning, specifically clustering techniques, to create subsets and identify irregular ones. The study's implications demonstrate that it is possible to use descriptors in trajectories for automatic anomaly detection and the use of unsupervised learning to segment required information. Our study's performance and comparative analysis have been demonstrated throughout multiple experiments. We present some quantitative results using synthetic data sets as well as qualitative analysis throughout two case studies considering real data sets that leave evidence of our contribution. </p>
-                                    <label for="ch5">Read Less...</label>
-                                </div>
-                                <label for="ch5">Read More...</label>
-                            </div>
-                            <a href="https://www.clei.org/cleiej/index.php/cleiej/article/view/538" target="_blank"><u>link to pdf or webpage</u></a>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </div>
-                        </div>
-                        <div class="article-right">
-                            <h3 class="article-title">6. "Towards accurate building recognition using convolutional neural networks"</h3>
-                            <p class="article-autors">Autors: Jeanfranco D. Farfan-Escobedo, Lauro Enciso-Rodas, John E. Vargas-Muñoz </p>
-                            <div class="article-description">
-                                <input type="checkbox" id="ch6">
-                                <div class="description-title">Abstract: </div>
-                                <p>Building recognition from images is a challenging task since pictures can be taken from different angles and under different illumination conditions. Most of the building recognition methods use local and global handcrafted image features and do not consider the rejection scenario, where the method have to </p>
-                                <div class="read-more-text">
-                                    <p> be capable of identifying if a given image does not belong to any of the classes of interest. We propose a method based on convolutional neural networks that obtain effective feature vectors to perform accurate classification of buildings. Additionally, we analyze and propose methods for the problem of classification with rejection.</p>
-                                    <label for="ch6">Read Less...</label>
-                                </div>
-                                <label for="ch6">Read More...</label>
-                            </div>
-                            <a href="https://ieeexplore.ieee.org/document/8079686" target="_blank"><u>link to pdf or webpage</u></a>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </div>
-                        </div>
-                        <div class="article-right">
-                            <h3 class="article-title">7. "Software as a service google apps in the internal communication of the national university of san antonio abad del cusco"</h3>
-                            <p class="article-autors">AUTORS: Hernán Nina, Lauro Enciso </p>
-                            <div class="article-description">
-                                <input type="checkbox" id="ch7">
-                                <div class="description-title">ABSTRACT: </div>
-                                <p>The internal communication in public universities is an unexplored field, however the previous
-                                    investigations considered to internal communication as a strategic element and essential to the success of
-                                    an organization. You can improve internal communication using digital channels that enhance and
-                                </p>
-                                <div class="read-more-text">
-                                    <p>
-                                    simplify the variety of traditional channels. The objective of the research is determined what extent
-                                    applications in the cloud of Google Apps for Education improve internal communication between
-                                    members of the university community. The results of the research reveal that the use of the Software as a
-                                    Service Google Apps does not substantially improve internal communication among members of the
-                                    university community. However, we have identified some factors that prevent the use of Google Apps for
-                                    Education, such as limitations in computer infrastructure, low level of knowledge in computing, limited
-                                    use of digital tools in academic activities and the absence of a strategic plan for internal communication.</p>
-                                        <label for="ch7">Read Less...</label>
-                                </div>
-                                <label for="ch7">Read More...</label>
-                            </div>
-                            <a href="https://ieomsociety.org/bogota2017/papers/113.pdf" target="_blank"><u>link to pdf or webpage</u></a>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </div>
-                        </div>
-                        <div class="article-right">
-                            <h3 class="article-title">8. "Application of convolutional neural networks for static hand gestures recognition under different invariant features"</h3>
-                            <p class="article-autors">Autors: C. Jose L. Flores, A. E. Gladys Cutipa, R. Lauro Enciso    </p>
-                            <div class="article-description">
-                                <input type="checkbox" id="ch8">
-                                <div class="description-title">Abstract: </div>
-                                <p>The present work proposes to recognize the static hand gestures taken under invariations features as scale, rotation, translation, illumination, noise and background. We use the alphabet of sign language of Peru (LSP). For this purpose, digital image processing techniques are used to eliminate or reduce 
-                                </p>
-                                <div class="read-more-text">
-                                    <p>noise, to improve the contrast under a variant illumination, to separate the hand from the background of the image and finally detect and cut the region containing the hand gesture. We use of convolutional neural networks (CNN) to classify the 24 hand gestures. Two CNN architectures were developed with different amounts of layers and parameters per layer. The tests showed that the first CNN has an accuracy of 95.37% and the second CNN has an accuracy of 96.20% in terms of recognition of the 24 static hand gestures using the database developed. We compared the two architectures developed in accuracy level for each type of invariance presented in this paper. We compared the two architectures developed and usual techniques of machine learning in results of accuracy.</p>
-                                    <label for="ch8">Read Less...</label>
-                                </div>
-                                <label for="ch8">Read More...</label>
-                            </div>
-                            <a href="https://ieeexplore.ieee.org/document/8079727" target="_blank"><u>link to pdf or webpage</u></a>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </div>
-                        </div>
-                        <div class="article-right">
-                            <h3 class="article-title">9. "Peruvian Sign Language Recognition Using a Hybrid Deep Neural Network"</h3>
-                            <p class="article-autors">Autors: Yuri Vladimir Huallpa Vargas, Naysha Naydu Diaz Ccasa & Lauro Enciso Rodas  </p>
-                            <div class="article-description">
-                                <input type="checkbox" name="" id="ch9">
-                                <div class="description-title">Abstract: </div>
-                                <p>Hearing impaired people have the ability to communicate with their hands and interpret sign language (SL), but this builds a communication gap with normal people. There are models for SL recognition that have images sequence RGB as input; however, the movements of the body in 3D space is
-                                </p>
-                                <div class="read-more-text">
-                                    <p> necessary to consider due to the complexity of the gestures. We built a model for Peruvian sign language recognition (PSL) to Spanish composed by 4 phases; first, the preprocessing phase in charge to process RGB, depth and skeleton streams obtained through the Kinect sensor v.1; second, the feature extraction which learn spatial information through 3 types of convolutional neural network (CNN); third, the bidirectional long short term memory (BLSTM) with residual connections in charge to reduced and encode the information. Finally, a decoder with attention mechanism and maxout network which learn the temporal information. Our proposed model is evaluated in LSA64 and ourself-built dataset. The experimental results show significant improvement compared to other models evaluated in these dataset .</p>
-                                    <label for="ch9">Read Less...</label>
-                                </div>
-                                <label for="ch9">Read More...</label>
-                            </div>
-                            <a href="https://link.springer.com/chapter/10.1007/978-3-030-46140-9_16" target="_blank"><u>link to pdf or webpage</u></a>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </div>
-                        </div>
-                        <div class="article-right">
-                            <h3 class="article-title">10. "Multi-Objective Optimization Algorithm for Center-Based Clustering"</h3>
-                            <p class="article-autors">Autors: Jared Leon, Boris Chullo-Llave, Lauro Enciso-Rodas, 
-                                Jose Luis Soncco-Alvarez </p>
-                            <div class="article-description">
-                                <input type="checkbox" name="" id="ch10">
-                                <div class="description-title">Abstract: </div>
-                                <p>Center-based clustering is a set of clustering problems that require finding a single element, a center, to
-                                    represent an entire cluster. The algorithms that solve this type of problems are very efficient for clustering
-                                    large and high-dimensional datasets. In this paper, we propose a similar heuristic used in </p>
-                                <div class="read-more-text">
-                                    <p>Lloyd’s algorithm
-                                    to approximately solve (EMAX algorithm) a more robust variation of the k-means problem, namely the
-                                    EMAX problem. Also, a new center-based clustering algorithm (SSO-C) is proposed, which is based on a
-                                    swarm intelligence technique called Social Spider Optimization. This algorithm minimizes a multi-objective
-                                    optimization function defined as a weighted combination of the objective functions of the k-means and
-                                    EMAX problems. Also, an approximation algorithm for the discrete k-center problem is used as a local
-                                    search strategy for initializing the population. Results of the experiments showed that SSO-C algorithm is
-                                    suitable for finding maximum best values, however EMAX algorithm is better in finding median and mean
-                                    values.</p>
-                                        <label for="ch10">Read Less...</label>
-                                </div>
-                                <label for="ch10">Read More...</label>
-                            </div>
-                            <a href="source/A_Multi-Objective_Optimization_Algorithm_for_Cente.pdf" target="_blank"><u>link to pdf or webpage</u></a>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </div>
-                        </div>
-                        <div class="article-right">
-                            <h3 class="article-title">11. "Parallel Social Spider Optimization Algorithms with Island Model for the Clustering Problem"</h3>
-                            <p class="article-autors">Autors: Edwin Alvarez-Mamani, Lauro Enciso,Mauricio Ayala-Rincon, José Luis Soncco-Álvarez </p>
-                            <div class="article-description">
-                                <input type="checkbox" name="" id="ch11">
-                                <div class="description-title">Abstract: </div>
-                                <p>The digital age came with an extraordinary ability to generate data across organizations, people, and devices, data that needs to be analyzed, processed and stored. A well-known technique for analyzing this kind of data is Clustering. Many bio-inspired algorithms were proposed for this problem such as the 
-                                </p>
-                                <div class="read-more-text">
-                                    <p>Social Spider Optimization (SSO). In this work, we propose parallel island models of the SSO algorithm for the Clustering problem, using 24 processors for each parallel algorithm. Such models were implemented using static and dynamic topologies, and datasets from the UCI Machine Learning Repository used for the stage of experiments. The achieved average speedups range from 15 to 28 times faster than the SSO algorithm for large and small datasets, respectively, and a parallel model with static ring topology performs a little bit faster than the other parallel models. The parallel algorithms provide results with similar precision to the ones computed with the SSO algorithm.</p>
-                                    <label for="ch11">Read Less...</label>
-                                </div>
-                                <label for="ch11">Read More...</label>
-                            </div>
-                            <a href="https://www.researchgate.net/publication/351499947_Parallel_Social_Spider_Optimization_Algorithms_with_Island_Model_for_the_Clustering_Problem" target="_blank"><u>link to pdf</u></a>
-                        </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Investigadores y Tesistas</div>
                     </div>
                 </div>
             </div>
-
-            <div class="content content-6">
-              <div class="member-container">
-                <h1>Members</h1>
-                <div class="docentes">
-                    <h4>Professors</h4>
-
-                      <div class="wrapper">
-                          <i id="leftTeachers" class="fa-solid fa-angle-left"></i>
-                          <ul class="carousel teachers-carousel">
-                            <li class="card">
-                              <div class="img"><img src="img-Miembros/LAURO.png" alt="img" draggable="false"></div>
-                              <h2>Dr. Lauro Enciso Rodas</h2>
-                              <span>Algorithms</span>
-                              <div class="red_social">
-                                  <a href="https://orcid.org/0000-0001-6266-0838" class="fab fa-orcid"></a>
-                                  <a href="https://mail.google.com/mail/u/0/?fs=1&to=lauro.enciso@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o"></a>
-                              </div>
-                              <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-                            <li class="card">
-                              <div class="img"><img src="img-Miembros/roma - HANS HARLEY CCACYAHUILLCA BEJAR.jpeg" alt="img" draggable="false"></div>
-                              <h2>Dr. Hans Harley Ccacyahuillca Bejar</h2>
-                              <span>Computational Vision</span>
-                              <div class="red_social">
-                                  <a href="https://orcid.org/0000-0001-5179-657X" class="fab fa-orcid"></a>
-                                  <a href="https://scholar.google.com/citations?user=o4k1GCYAAAAJ&hl=es" class="fab fa-google-scholar"></a>
-                                  <a href="https://mail.google.com/mail/u/0/?fs=1&to=hans.ccacyahuillca@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o"></a>
-                              </div>
-                              <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-
-                            <li class="card">
-                              <div class="img"><img src="img-Miembros/foto_harley - HARLEY VERA OLIVERA.jpeg" alt="img" draggable="false"></div>
-                              <h2>Dr. Harley Vera Olivera</h2>
-                              <span>Databases,Data model</span>
-                              <div class="red_social">
-                                  <a href="https://orcid.org/0000-0003-2011-8797" class="fab fa-orcid"></a>
-                                  <a href="https://scholar.google.com/citations?user=Ru_DKGsAAAAJ&hl=en" class="fab fa-google-scholar"></a>
-                                  <a href="https://mail.google.com/mail/u/0/?fs=1&to=harley.vera@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o"></a>
-                              </div>
-                              <a href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=39576" target="_blank"><u>CTI Vitae</u></a>
-                            </li>
-
-                            <li class="card">
-                              <div class="img"><img src="img-Miembros/GABRIELA.jpeg" alt="img" draggable="false"></div>
-                              <h2>Mag. Gabriela Zuniga Rojas </h2>
-                              <span>Natural Language Processing (NLP)</span>
-                              <div class="red_social">
-                                  <a href="https://orcid.org/0000-0002-2071-2713" class="fab fa-orcid"></a>
-                                  <a href="#" class="fab fa-google-scholar"></a>
-                                  <a href="https://mail.google.com/mail/u/0/?fs=1&to=gabriela.zuniga@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o"></a>
-                              </div>
-                              <a href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=142519" target="_blank"><u>.</u></a>
-                            </li>
-
-                          <i id="rightTeachers" class="fa-solid fa-angle-right"></i>
-
-                        </div> <!-- End of wrapper -->
-
-                        <div class="wrapper">
-                          <i id="leftTeachers" class="fa-solid fa-angle-left"></i>
-                          <ul class="carousel teachers-carousel">
-
-                            <li class="card">
-                              <div class="img"><img src="img-Miembros/GERAR.png" alt="img" draggable="false"></div>
-                              <h2>Mag. Gerar Francis Quispe Torres </h2>
-                              <span>Procesamiento de Datos, Detección de Anomálias</span>
-                              <div class="red_social">
-                                  <a href="https://github.com/fryzito" class="fa fa-github" target="_blank" ></a>
-                                  <a href="https://scholar.google.com/citations?user=Gd9PwdwAAAAJ&hl=es&oi=ao" class="fab fa-google-scholar"></a>
-                                  <a href="https://mail.google.com/mail/u/0/?fs=1&to=gerar.quispe@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o"></a>
-                              </div>
-                              <a href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=57168" target="_blank"><u>CTI Vitae</u></a>
-                            </li>
-
-                            <li class="card">
-                              <div class="img"><img src="img-Miembros/EDWIN.png" alt="img" draggable="false"></div>
-                              <h2>Mag. Edwin Alvarez</h2>
-                              <span>Machine Learning, Parallel Computer</span>
-                              <div class="red_social">
-                                  <a href="https://orcid.org/0000-0001-9458-9116" class="fab fa-orcid" target="_blank"></a>
-                                  <a href="https://scholar.google.com/citations?user=vyrFoh4AAAAJ" class="fab fa-google-scholar" target="_blank"></a>
-                                  <a href="https://github.com/win7" class="fa fa-github" target="_blank"></a>
-                                  <a href="https://mail.google.com/mail/u/0/?fs=1&to=edwin.alvarez@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o" target="_blank"></a>
-                              </div>
-                              <a href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=118713" target="_blank"><u>CTI Vitae</u></a>
-                            </li>
-
-                            <li class="card">
-                              <div class="img"><img src="img-Miembros/CARLOS.png" alt="img" draggable="false"></div>
-                              <h2>Dr. Fernando Montoya Cubas </h2>
-                              <span>Redes Complejas, Redes de Interacción Genética</span>
-                              <div class="red_social">
-                                  <a href="#" class="fab fa-orcid"></a>
-                                  <a href="#" class="fab fa-google-scholar"></a>
-                                  <a href="#" class="fa fa-envelope-o"></a>
-                              </div>
-                              <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-
-                            <li class="card">
-                              <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                              <h2>nombre </h2>
-                              <span>Especialidad</span>
-                              <div class="red_social">
-                                  <a href="#" class="fab fa-orcid"></a>
-                                  <a href="#" class="fab fa-google-scholar"></a>
-                                  <a href="#" class="fa fa-envelope-o"></a>
-                              </div>
-                              <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-
-                          <i id="rightTeachers" class="fa-solid fa-angle-right"></i>
-
-                        </div> <!-- End of wrapper -->
-
-                </div> <!-- End of docentes -->
-
-
-                <div class="alumnos">
-                    <h4>Students</h4>
-                    <div class="wrapper">
-                        <i id="leftStudents" class="fa-solid fa-angle-left"></i>
-                        <ul class="carousel students-carousel">
-                            <li class="card">
-                                <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                                <h2>Ibeth Janela del Pilar Cusi </h2>
-                                <span></span>
-                                <div class="red_social">
-                                    <a href="#" class="fab fa-orcid"></a>
-                                    <a href="#" class="fab fa-google-scholar"></a>
-                                    <a href="#" class="fa fa-envelope-o"></a>
-                                </div>
-                                <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-                            <li class="card">
-                                <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                                <h2>Johan Mihail Conde Sallo </h2>
-                                <span></span>
-                                <div class="red_social">
-                                    <a href="#" class="fab fa-orcid"></a>
-                                    <a href="#" class="fab fa-google-scholar"></a>
-                                    <a href="#" class="fa fa-envelope-o"></a>
-                                </div>
-                                <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-                            <li class="card">
-                                <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                                <h2>Yasumy Maricely Jallo Paccaya</h2>
-                                <span>Especialidad</span>
-                                <div class="red_social">
-                                    <a href="#" class="fab fa-orcid"></a>
-                                    <a href="#" class="fab fa-google-scholar"></a>
-                                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=204799@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o" target="_blank"></a>
-                                </div>
-                                <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-                            <li class="card">
-                                <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                                <h2>Thalia Quispe Mamani </h2>
-                                <span>Especialidad</span>
-                                <div class="red_social">
-                                    <a href="#" class="fab fa-orcid"></a>
-                                    <a href="#" class="fab fa-google-scholar"></a>
-                                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=171879@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o" target="_blank"></a>
-                                </div>
-                                <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-                            <li class="card">
-                                <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                                <h2>Jadyra Ch'aska Choque Quispe</h2>
-                                <span>Especialidad</span>
-                                <div class="red_social">
-                                    <a href="#" class="fab fa-orcid"></a>
-                                    <a href="#" class="fab fa-google-scholar"></a>
-                                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=204795@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o" target="_blank"></a>
-                                </div>
-                                <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-                            <li class="card">
-                                <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                                <h2>Rebeca Araceli Ccansaya Soncco </h2>
-                                <span>Especialidad</span>
-                                <div class="red_social">
-                                    <a href="#" class="fab fa-orcid"></a>
-                                    <a href="#" class="fab fa-google-scholar"></a>
-                                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=204794@unsaac.edu.pe&tf=cm" class="fa fa-envelope-o" target="_blank"></a>
-                                </div>
-                                <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-                            </ul>
-                        <i id="rightStudents" class="fa-solid fa-angle-right"></i>
-                    </div>
-                </div>
-                <div class="ex-estudiantes">
-                    <h4>Ex Students</h4>
-                    <div class="wrapper">
-                        <i id="leftExStudents" class="fa-solid fa-angle-left"></i>
-                        <ul class="carousel ex-students-carousel">
-                            <li class="card">
-                                <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                                <h2>Mag. Edwin Alvarez Mamani</h2>
-                                <span>Ph. D student at PUCP, Perú</span>
-                                <div class="red_social">
-                                    <a href="https://orcid.org/0000-0001-9458-9116" class="fab fa-orcid"></a>
-                                    <a href="https://scholar.google.com/citations?hl=es&user=vyrFoh4AAAAJ" class="fab fa-google-scholar"></a>
-                                    <a href="https://github.com/win7" class="fa fa-github"></a>
-                                </div>
-                                <a href="https://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do;jsessionid=84458394a1f72648a34ecc87b9cc?id_investigador=118713" target="_blank"><u>CTI Vitae</u></a>
-                            </li>
-                            <li class="card">
-                                <div class="img"><img src="img-Miembros/jared2019-bw - Jared León.jpg" alt="img" draggable="false"></div>
-                                <h2>Mag. Jared León Malpartida</h2>
-                                <span>Ph. D student at Warwick, England</span>
-                                <div class="red_social">
-                                    <a href="https://scholar.google.com/citations?user=xqs6PzIAAAAJ&hl=en" class="fab fa-google-scholar"></a>
-                                    <a href="https://wozmit.github.io/" class="fa fa-globe"></a>
-                                </div>
-                                <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-                            <li class="card">
-                                <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                                <h2>bach. Milagros Yarahuaman Rojas</h2>
-                                <span>MSc student at USP, Brasil
-                                <div class="red_social">
-                                    <a href="https://orcid.org/0000-0003-1656-1876" class="fab fa-orcid"></a>
-                                    <a href="https://scholar.google.com/citations?hl=en&user=zx8xBkgAAAAJ" class="fab fa-google-scholar"></a>
-                                </div>
-                                <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-                            <li class="card">
-                                <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                                <h2>nombre </h2>
-                                <span>Especialidad</span>
-                                <div class="red_social">
-                                    <a href="#" class="fab fa-orcid"></a>
-                                    <a href="#" class="fab fa-google-scholar"></a>
-                                    <a href="#" class="fa fa-envelope-o"></a>
-                                </div>
-                                <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-                            <li class="card">
-                                <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                                <h2>nombre </h2>
-                                <span>Especialidad</span>
-                                <div class="red_social">
-                                    <a href="#" class="fab fa-orcid"></a>
-                                    <a href="#" class="fab fa-google-scholar"></a>
-                                    <a href="#" class="fa fa-envelope-o"></a>
-                                </div>
-                                <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-                            <li class="card">
-                                <div class="img"><img src="img-Miembros/imagen1.jpg" alt="img" draggable="false"></div>
-                                <h2>nombre </h2>
-                                <span>Especialidad</span>
-                                <div class="red_social">
-                                    <a href="#" class="fab fa-orcid"></a>
-                                    <a href="#" class="fab fa-google-scholar"></a>
-                                    <a href="#" class="fa fa-envelope-o"></a>
-                                </div>
-                                <a href="#" target="_blank"><u>.</u></a>
-                            </li>
-                            </ul>
-                            <i id="rightExStudents" class="fa-solid fa-angle-right"></i>
-                        </div>
-                </div>
-                </div>
-            </div>
-
-
-            <!-- Contact Section -->
-            <div class="content content-7">
-              <div class="contact-container">
-
-                <div class="contact-title">
-                    <h1>Contact Us</h1>
-                </div>
-
-                <div class="contenedor">
-
-                    <div class="box_a">
-                        <p>
-                            FACULTAD DE INGENIERÍA ELÉCTRICA, ELECTRÓNICA, INFORMÁTICA Y MECÁNICA
-                        </p>
-                        <br>
-                        <p>Escuela Profesional de Ingeniería Informática y de Sistemas, 4th floor Perayoc Campus,<br> 
-                            Av. De La Cultura N° 733<br> 
-                            Cusco, Cusco, Peru<br>
-                        </p>
-                    </div>
-
-                    <!-- linea vertical-->
-
-                    <div class="box_a">
-
-                        Feel free to write us!
-
-                        <h3>Email:</h3>
-                        <br>
-                        <br>
-                        <p><a href="mailto:contact@laad.com">laad@unsaac.edu.pe</a></p>
-
-                    </div>
-
-                </div>
-              </div>
-            </div>
-
-
         </section>
 
-  <footer>
-    <div class="grupo-1">
-        <div class="box">
-            <figure>
-                <a href="#">
-                    <img src="Index/imagenes/logo-v2.png" alt="Imagenlogo2">
-                </a>
-            </figure>
-        </div>
+        <!-- Quick Access Cards / Overview Grid -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Nuestras Áreas Principales</h2>
+                    <p class="section-lead">Accede directamente a la información de tu interés de forma rápida y organizada.</p>
+                </div>
 
-        <div class="box">
-            <h2>LAAD</h2>
-            <ul class="footer-links">
-                <li><label for="inicio" class="inicio">Home</label></li>
-                <li><label for="publicaciones" class="publicaciones">Publications</label></li>
-                <li><label for="proyectos" class="proyectos">Projects</label></li>
-                <li><label for="reconocimientos" class="reconocimientos">Awards</label></li>
-                <li><label for="miembros" class="miembros">Members</label></li>
-                <li><label for="contacto" class="contacto">Contacto</label></li>
-                <li><label for="sources" class="sources">Sources</label></li>
-            </ul>            
-        </div>
+                <div class="quick-nav-grid">
+                    <a href="nosotros.html" class="quick-card">
+                        <div class="quick-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>Sobre el LAAD</h3>
+                        <p>Conoce nuestra visión, áreas de investigación en computación y misión académica en la UNSAAC.</p>
+                        <span class="quick-link-text">Ver Más <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
 
-        <div class="box">
-            <div class="map">
-                <i class="fas fa-map-marker-alt"></i>
-                <p><span>Universidad Nacional de San Antonio Abad del Cusco</span> Av de la Cultura 733- Cusco, Cusco, Cusco, Perú</p>
+                    <a href="proyectos.html" class="quick-card">
+                        <div class="quick-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                        <h3>Proyectos</h3>
+                        <p>Investigación aplicada financiada con fondos competitivos (SaminBot, patrones de movilidad Flickr).</p>
+                        <span class="quick-link-text">Ver Proyectos <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="publicaciones.html" class="quick-card">
+                        <div class="quick-icon"><i class="fa-solid fa-newspaper"></i></div>
+                        <h3>Publicaciones</h3>
+                        <p>Artículos científicos en conferencias y revistas indizadas como CLEI, IEEE, Springer y NAACL.</p>
+                        <span class="quick-link-text">Buscar Papers <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="premios.html" class="quick-card">
+                        <div class="quick-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h3>Premios y Galardones</h3>
+                        <p>Reconocimientos Best Paper otorgados a nuestros docentes y estudiantes en congresos internacionales.</p>
+                        <span class="quick-link-text">Ver Reconocimientos <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="plantillas.html" class="quick-card">
+                        <div class="quick-icon"><i class="fa-solid fa-file-code"></i></div>
+                        <h3>Recursos</h3>
+                        <p>Descarga plantillas oficiales de Plan de Tesis y Tesis Completa en LaTeX con enlace a Overleaf.</p>
+                        <span class="quick-link-text">Descargar Recursos <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="oportunidades.html" class="quick-card featured-gold">
+                        <div class="quick-icon gold"><i class="fa-solid fa-bullhorn"></i></div>
+                        <h3>Oportunidades</h3>
+                        <p>Convocatorias para asistentes de investigación, propuestas de temas de tesis y proyectos abiertos.</p>
+                        <span class="quick-link-text gold">Ver Convocatorias <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Common -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <p><strong>Laboratorio de Algoritmos y Análisis de Datos</strong><br>
+                Universidad Nacional de San Antonio Abad del Cusco.</p>
             </div>
             
-            <div class="email">
-                <i class="far fa-envelope"></i>
-                <p><a href="https://mail.google.com/mail/u/0/?fs=1&to=laad@unsaac.edu.pe&tf=cm" target="_blank">laad@unsaac.edu.pe</a></p>
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="publicaciones.html">Publicaciones</a>
+                <a href="premios.html">Premios</a>
+                <a href="plantillas.html">Recursos</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="oportunidades.html">Oportunidades</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 LAAD. Todos los derechos reservados. | Cusco, Perú.</p>
             </div>
         </div>
+    </footer>
 
-        <div class="box">
-            <h3>FOLLOW US</h3>
-            <div class="red-social">
-                <a href="https://www.facebook.com/laad.unsaac?locale=es_LA" class="fa fa-facebook" target="_blank"></a>
-                <a href="https://github.com/laad-unsaac" class="fa fa-github" target="_blank"></a>
-            </div>
-               
-        </div>
-    </div>
-
-    <div class="grupo-2">
-         <small>&copy; 2025 <b>LAAD</b> - Todos los Derechos Reservados.</small>
-    </div>
-</footer>
+    <script src="script.js"></script>
 </body>
 </html>
