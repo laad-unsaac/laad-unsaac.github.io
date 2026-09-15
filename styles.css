@@ -1469,6 +1469,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #16A34A;
 }
 
+.opp-status.closed {
+    color: #DC2626;
+}
+
 .opp-tag {
     display: inline-block;
     font-size: 0.8rem;
@@ -1517,6 +1521,32 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.6rem 1rem;
     border-radius: var(--radius-sm);
     margin-top: auto;
+}
+
+.opp-requirements {
+    background: rgba(155, 25, 45, 0.04);
+    border: 1px solid rgba(155, 25, 45, 0.15);
+    border-radius: var(--radius-sm);
+    padding: 0.85rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.opp-requirements h4 {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-unsaac-guinda);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.opp-requirements .opp-meta {
+    padding-top: 0;
+    border-top: none;
+    margin-top: 0;
 }
 
 /* How to apply box */
